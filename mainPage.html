@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<!-- Bootstrap Required Meta Tags -->
+		<meta charset="UTF-8">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		<!-- <meta name="viewport" content="height=device-height, initial-scale=1"> -->
+		<!-- <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"> -->
+		<!-- <meta name="viewport" content="width=device-width"> -->
+		<!-- <meta name="viewport" content="height=device-height"> -->
+		<!-- <meta name="viewport" content="width=device-width, height=device-height"> -->
+		<!-- <meta name="viewport" content="initial-scale=1"> -->
+		<!-- <meta name="viewport" content="initial-scale=1, viewport-fit=cover"> -->
+		<!-- <meta name="viewport" content="viewport-fit=cover"> -->
+		<!-- <meta http-equiv="Cache-control" content="No-Cache"> -->
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<!-- <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+		
+		<!-- Self Made Style Sheet -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style_loaderSection.css">
+		<link rel="stylesheet" href="css/style_headerSection.css">
+		<link rel="stylesheet" href="css/style_homeSection.css">
+		<link rel="stylesheet" href="css/style_creatorsSection.css">
+		<link rel="stylesheet" href="css/style_projectSection.css">
+		<link rel="stylesheet" href="css/style_aboutSection.css">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+		<title>Immerse1905</title>
+	</head>
+	<body onload="loadStyles()" class="preload">
+		<!-- Loading Screen -->
+		<section id="loaderSection" class="">
+			<div id="loaderSection_centerPoint">
+				<div id="loaderSection_dialog">
+					<div id="loaderSection_dialogBox">
+						<p class="loaderSection_dialogBoxTxt">
+							Hello!
+						</p>
+					</div>
+				</div>
+				<div id="loaderSection_gif">
+					<img src="images/loaderSection/loaderSection_gif_mascotPortal.webp" alt="Missing Image">
+				</div>
+			</div>
+		</section>
+	
+		<!-- Header Section -->
+		<header id="headerSection" class="">
+			<!-- <div class="headerRow headerRow_btn d-flex flex-row justify-content-center w-100"> -->
+				<!-- About Us Section Button -->
+				<!-- <a href="#aboutus" class="header_btn"><h1>About Us</h1></a> -->
+				<!-- Creators Section Button -->
+				<!-- <a href="#creatorsSection" class="header_btn"><h1>Creators</h1></a> -->
+				<!-- Projects Section Button -->
+				<!-- <a href="#projectSection" class="header_btn"><h1>Projects</h1></a> -->
+			<!-- </div> -->
+			<svg id="navbar" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1064 72">
+				<image width="1064" height="72" xlink:href="images/img_navbar.png"></image> 
+				<!-- About Us Section Button -->
+				<a xlink:href="#aboutSection">
+					<rect x="65" y="0" fill="#fff" opacity="0" width="187" height="72"></rect>
+				</a>
+				<!-- Creators Section Button -->
+				<a xlink:href="#creatorsSection">
+					<rect x="407" y="0" fill="#fff" opacity="0" width="196" height="72"></rect>
+				</a>
+				<!-- Projects Section Button -->
+				<a xlink:href="#projectSection">
+					<rect x="767" y="0" fill="#fff" opacity="0" width="215" height="72"></rect>
+				</a>
+			</svg>
+			<!-- <img src="images/img_navbar.png" alt="Missing Image" id="navbar" class="d-block" usemap="#navbar_btns"> -->
+			<!-- <map name="navbar_btns"> -->
+				<!-- About Us Section Button -->
+				<!-- <area shape="rect" coords="72,15,249,58" alt="About Us" href="#aboutus"> -->
+			<!-- </map> -->
+		</header>
+		
+		<!-- Home Section -->
+		<section id="homeSection" class="webSection webSection_snap">
+			<div class="d-flex flex-row h-100 w-100">
+				<!-- Island Select Scene -->
+				<div id="islandScene">
+					<div id="islandSelect">
+						<div class="island">
+							<h1>About Us</h1>
+							<a href="#aboutSection" class="island_link">
+								<!-- <img src="images/homeSection/island_aboutUs.webp" alt="Missing Image" class="mx-auto d-block"> -->
+								<img data-src="https://i.imgur.com/LT7Qoln.gif" alt="Missing Image" class="lazyload mx-auto d-block">
+							</a>
+						</div>
+						<div class="island">
+							<h1>Creators</h1>
+							<a href="#creatorsSection" class="island_link">
+								<!-- <img src="images/homeSection/island_creators.webp" alt="Missing Image" class="mx-auto d-block"> -->
+								
+								<!-- <img data-src="images/homeSection/island_creators.webp" alt="Missing Image" class="lazyload mx-auto d-block"> -->
+								<img data-src="https://i.imgur.com/BQS54jn.gif" alt="Missing Image" class="lazyload mx-auto d-block">
+							</a>
+						</div>
+						<div class="island">
+							<h1>Projects</h1>
+							<a href="#projectSection" class="island_link">
+								<!-- <img src="images/homeSection/island_projects.webp" alt="Missing Image" class="mx-auto d-block"> -->
+								
+								<!-- <img data-src="images/homeSection/island_projects.webp" alt="Missing Image" class="lazyload mx-auto d-block"> -->
+								<img data-src="https://i.imgur.com/V2TpiF3.gif" alt="Missing Image" class="lazyload mx-auto d-block">
+							</a>
+						</div>
+					</div>
+					<!-- Island Select Button Scene -->
+					<div id="islandBtns">
+						<div class="leftBtn" onclick="changeIsland_prev()">
+							<!-- <img src="images/homeSection/homeSection_arrowBtn.png" alt="Missing Image" class=""> -->
+							<img src="images/arrowBtn_2.png" alt="Missing Image" class="">
+						</div>
+						<div class="rightBtn" onclick="changeIsland_next()">
+							<!-- <img src="images/homeSection/homeSection_arrowBtn.png" alt="Missing Image" class=""> -->
+							<img src="images/arrowBtn_2.png" alt="Missing Image" class="">
+						</div>
+					</div>
+				</div>
+
+				<!-- Dialog Box -->
+				<div id="homeSection_dialog">
+					<div>
+						<p class="dialogBoxTxt">
+							<!-- What to find out about the committee and their lectures? Click here! *Boop* -->
+							<!-- Immi's creators are very talented! *Beep* Click on the little creator icon to see more. *Boop*  -->
+							<!-- Want to see more creation from Immi’s creators? *Boop* Click here to enjoy many wonderful short films together with Immi! *Beep* -->
+						</p>
+					</div>
+				</div>
+
+				<!-- Cliff and Creator Scene -->
+				<div id="foreground_scene">
+					<img src="images/homeSection/homeSection_img_foreground.png" alt="Missing Image" class="">
+				</div>
+				
+				<!-- Cliff and Creator Scene -->
+				<!-- <div id="cliffChar_scene"> -->
+					<!-- <div id="cliffNchar"> -->
+						<!-- <div id="cliffChar"><img src="images/cliffCharacter.png" alt="Missing Image" class="img-fluid"></div> -->
+						<!-- <div id="cliff"><img src="images/cliff.png" alt="Missing Image" class="img-fluid"></div> -->
+					<!-- </div> -->
+				<!-- </div> -->
+				
+				<!-- Social Media Scene -->
+				<div id="socialMedia_scene" class="d-flex flex-row justify-content-around align-items-center">
+					<!-- Instagram Link -->
+					<a href="https://www.instagram.com/immerse1905/" target="_blank">
+						<!-- <img src="images/homeSection/SMedia_insta2.png" alt="Missing Image" class=""> -->
+						<img data-src="images/homeSection/SMedia_insta2.png" alt="Missing Image" class="lazyload">
+					</a>
+					<!-- Facebook Link -->
+					<a href="https://www.facebook.com/immerseil1905" target="_blank">
+						<!-- <img src="images/homeSection/SMedia_facebook2.png" alt="Missing Image" class=""> -->
+						<img data-src="images/homeSection/SMedia_facebook2.png" alt="Missing Image" class="lazyload">
+					</a>
+					<!-- Twitter Link -->
+					<a href="https://www.twitter.com/Immerse1905" target="_blank">
+						<!-- <img src="images/homeSection/SMedia_twitter2.png" alt="Missing Image" class=""> -->
+						<img data-src="images/homeSection/SMedia_twitter2.png" alt="Missing Image" class="lazyload">
+					</a>
+				</div>
+				
+				<!-- <div class="footerRow footerRow_sLinks d-flex flex-row justify-content-center align-items-center"> -->
+					<!-- Instagram Link -->
+					<!-- <a href="https://www.instagram.com/immerse1905/" target="_blank" class="footer_btn_sLink"> -->
+						<!-- <img src="images/SMedia_insta.png" alt="Missing Image" class=""> -->
+					<!-- </a> -->
+					<!-- Facebook Link -->
+					<!-- <a href="https://www.facebook.com/immerseil1905" target="_blank" class="footer_btn_sLink"> -->
+						<!-- <img src="images/SMedia_facebook.png" alt="Missing Image" class=""> -->
+					<!-- </a> -->
+					<!-- Twitter Link -->
+					<!-- <a href="https://twitter.com/Immerse1905" target="_blank" class="footer_btn_sLink"> -->
+						<!-- <img src="images/SMedia_twitter.png" alt="Missing Image" class=""> -->
+					<!-- </a> -->
+				<!-- </div> -->
+				
+				<!-- <div id="socialMedia_scene" class="d-flex flex-row justify-content-around align-items-center"> -->
+					<!-- <div> -->
+						<!-- <a href="https://www.instagram.com/immerse1905/" target="_blank"> -->
+							<!-- <img src="images/SMedia_insta.png" alt="Missing Image" class=""> -->
+						<!-- </a> -->
+					<!-- </div> -->
+					<!-- <div> -->
+						<!-- <a href="https://www.facebook.com/immerseil1905" target="_blank"> -->
+							<!-- <img src="images/SMedia_facebook.png" alt="Missing Image" class=""> -->
+						<!-- </a> -->
+					<!-- </div> -->
+					<!-- <div> -->
+						<!-- <a href="https://www.facebook.com/immerseil1905" target="_blank"> -->
+							<!-- <img src="images/SMedia_twitter.png" alt="Missing Image" class=""> -->
+						<!-- </a> -->
+					<!-- </div> -->
+				<!-- </div> -->
+			</div>
+		</section>
+		
+		<!-- Creators Section -->
+		<section id="creatorsSection" class="webSection webSection_snap">
+			<!-- Creator Selection Scene -->
+			<div id="creatorsSelectScene">
+				<!-- Creator Carousel -->
+				<div id="creatorsSelect">
+					<!-- Ally, Ally Teo Pei Wen -->
+					<div class="creator">
+						<a href="pflo1.html" class="creator_pics">
+							<!-- <img src="images/creatorsSection/Ally.webp" alt="Missing Image" class=""> -->
+							<img data-src="images/creatorsSection/Ally.webp" alt="Missing Image" class="lazyload">
+						</a>
+						<div class="creator_titleNdes text-white text-center text-wrap">
+							<div class="creatorTitle">
+								<h3>Ally Teo Pei Wen</h3>
+							</div>
+							<!-- <hr> -->
+							<!-- <div class="creatorDes"> -->
+								<!-- <p> -->
+									<!-- Some seek their good or happiness in power; others in science, and others in the pleasures of the flesh.  -->
+									<!-- But those who come truly close to the good understand that it cannot consist in what can only be mastered by a few. -->
+								<!-- </p> -->
+							<!-- </div> -->
+						</div>
+					</div>
+					<!-- Darren, Darren Lai Ho Keat -->
+					<div class="creator">
+						<a href="pflo2.html" class="creator_pics">
+							<!-- <img src="images/creatorsSection/Darren.webp" alt="Missing Image" class=""> -->
+							<img data-src="images/creatorsSection/Darren.webp" alt="Missing Image" class="lazyload">
+						</a>
+						<div class="creator_titleNdes text-white text-center text-wrap">
+							<div class="creatorTitle">
+								<h3>Darren Lai Ho Keat</h3>
+							</div>
+							<!-- <hr> -->
+							<!-- <div class="creatorDes"> -->
+								<!-- <p> -->
+									<!-- Some seek their good or happiness in power; others in science, and others in the pleasures of the flesh.  -->
+									<!-- But those who come truly close to the good understand that it cannot consist in what can only be mastered by a few. -->
+								<!-- </p> -->
+							<!-- </div> -->
+						</div>
+					</div>
+					<!-- Najwa, Dayang Najwa Batrisyia Binti Abang Zulkipli -->
+					<div class="creator">
+						<a href="pflo11.html" class="creator_pics">
+							<!-- <img src="images/creatorsSection/Najwa.webp" alt="Missing Image" class=""> -->
+							<img data-src="images/creatorsSection/Najwa.webp" alt="Missing Image" class="lazyload">
+						</a>
+						<div class="creator_titleNdes text-white text-center text-wrap">
+							<div class="creatorTitle">
+								<h3>Dayang Najwa Batrisyia Binti Abang Zulkipli</h3>
+							</div>
+							<!-- <hr> -->
+							<!-- <div class="creatorDes"> -->
+								<!-- <p> -->
+									<!-- Some seek their good or happiness in power; others in science, and others in the pleasures of the flesh.  -->
+									<!-- But those who come truly close to the good understand that it cannot consist in what can only be mastered by a few. -->
+								<!-- </p> -->
+							<!-- </div> -->
+						</div>
+					</div>
+					<!-- Elena, Elena Davinya Navaratnam -->
+					<div class="creator">
+						<a href="pflo4.html" class="creator_pics">
+							<!-- <img src="images/creatorsSection/Elena.webp" alt="Missing Image" class=""> -->
+							<img data-src="images/creatorsSection/Elena.webp" alt="Missing Image" class="lazyload">
+						</a>
+						<div class="creator_titleNdes text-white text-center text-wrap">
+							<div class="creatorTitle">
+								<h3>Elena Davinya Navaratnam</h3>
+							</div>
+							<!-- <hr> -->
+							<!-- <div class="creatorDes"> -->
+								<!-- <p> -->
+									<!-- Some seek their good or happiness in power; others in science, and others in the pleasures of the flesh.  -->
+									<!-- But those who come truly close to the good understand that it cannot consist in what can only be mastered by a few. -->
+								<!-- </p> -->
+							<!-- </div> -->
+						</div>
+					</div>
+					<!-- Elvira, Elvira Elza -->
+					<div class="creator">
+						<a href="pflo5.html" class="creator_pics">
+							<!-- <img src="images/creatorsSection/Elvira.webp" alt="Missing Image" class=""> -->
+							<img data-src="images/creatorsSection/Elvira.webp" alt="Missing Image" class="lazyload">
+						</a>
+						<div class="creator_titleNdes text-white text-center text-wrap">
+							<div class="creatorTitle">
+								<h3>Elvira Elza</h3>
+							</div>
+							<!-- <hr> -->
+							<!-- <div class="creatorDes"> -->
+								<!-- <p> -->
+									<!-- Some seek their good or happiness in power; others in science, and others in the pleasures of the flesh.  -->
+									<!-- But those who come truly close to the good understand that it cannot consist in what can only be mastered by a few. -->
+								<!-- </p> -->
+							<!-- </div> -->
+						</div>
+					</div>
+					<!-- Evelyn, Evelyn Yap Yi Wen -->
+					<div class="creator">
+						<a href="pflo6.html" class="creator_pics">
+							<!-- <img src="images/creatorsSection/Evelyn.webp" alt="Missing Image" class=""> -->
+							<img data-src="images/creatorsSection/Evelyn.webp" alt="Missing Image" class="lazyload">
+						</a>
+						<div class="creator_titleNdes text-white text-center text-wrap">
+							<div class="creatorTitle">
+								<h3>Evelyn Yap Yi Wen</h3>
+							</div>
+							<!-- <hr> -->
+							<!-- <div class="creatorDes"> -->
+								<!-- <p> -->
+									<!-- Some seek their good or happiness in power; others in science, and others in the pleasures of the flesh.  -->
+									<!-- But those who come truly close to the good understand that it cannot consist in what can only be mastered by a few. -->
+								<!-- </p> -->
+							<!-- </div> -->
+						</div>
+					</div>
+					<!-- Jia Sing, Heng Jia Sing -->
+					<div class="creator">
+						<a href="pflo9.html" class="creator_pics">
+							<!-- <img src="images/creatorsSection/Jia Sing.webp" alt="Missing Image" class=""> -->
+							<img data-src="images/creatorsSection/Jia Sing.webp" alt="Missing Image" class="lazyload">
+						</a>
+						<div class="creator_titleNdes text-white text-center text-wrap">
+							<div class="creatorTitle">
+								<h3>Heng Jia Sing</h3>
+							</div>
+							<!-- <hr> -->
+							<!-- <div class="creatorDes"> -->
+								<!-- <p> -->
+									<!-- Some seek their good or happiness in power; others in science, and others in the pleasures of the flesh.  -->
+									<!-- But those who come truly close to the good understand that it cannot consist in what can only be mastered by a few. -->
+								<!-- </p> -->
+							<!-- </div> -->
+						</div>
+					</div>
+					<!-- Kenneth, Kenneth Choo Peng Cherng -->
+					<div class="creator">
+						<a href="pflo10.html" class="creator_pics">
+							<!-- <img src="images/creatorsSection/Kenneth.webp" alt="Missing Image" class=""> -->
+							<img data-src="images/creatorsSection/Kenneth.webp" alt="Missing Image" class="lazyload">
+						</a>
+						<div class="creator_titleNdes text-white text-center text-wrap">
+							<div class="creatorTitle">
+								<h3>Kenneth Choo Peng Cherng</h3>
+							</div>
+							<!-- <hr> -->
+							<!-- <div class="creatorDes"> -->
+								<!-- <p> -->
+									<!-- Some seek their good or happiness in power; others in science, and others in the pleasures of the flesh.  -->
+									<!-- But those who come truly close to the good understand that it cannot consist in what can only be mastered by a few. -->
+								<!-- </p> -->
+							<!-- </div> -->
+						</div>
+					</div>
+					<!-- Jack, Lee Jack Nen -->
+					<div class="creator">
+						<a href="pflo8.html" class="creator_pics">
+							<!-- <img src="images/creatorsSection/Jack.webp" alt="Missing Image" class=""> -->
+							<img data-src="images/creatorsSection/Jack.webp" alt="Missing Image" class="lazyload">
+						</a>
+						<div class="creator_titleNdes text-white text-center text-wrap">
+							<div class="creatorTitle">
+								<h3>Lee Jack Nen</h3>
+							</div>
+							<!-- <hr> -->
+							<!-- <div class="creatorDes"> -->
+								<!-- <p> -->
+									<!-- Some seek their good or happiness in power; others in science, and others in the pleasures of the flesh.  -->
+									<!-- But those who come truly close to the good understand that it cannot consist in what can only be mastered by a few. -->
+								<!-- </p> -->
+							<!-- </div> -->
+						</div>
+					</div>
+					<!-- Sze Yi, Lee Sze Yi -->
+					<div class="creator">
+						<a href="pflo14.html" class="creator_pics">
+							<!-- <img src="images/creatorsSection/Sze Yi.webp" alt="Missing Image" class=""> -->
+							<img data-src="images/creatorsSection/Sze Yi.webp" alt="Missing Image" class="lazyload">
+						</a>
+						<div class="creator_titleNdes text-white text-center text-wrap">
+							<div class="creatorTitle">
+								<h3>Lee Sze Yi</h3>
+							</div>
+							<!-- <hr> -->
+							<!-- <div class="creatorDes"> -->
+								<!-- <p> -->
+									<!-- Some seek their good or happiness in power; others in science, and others in the pleasures of the flesh.  -->
+									<!-- But those who come truly close to the good understand that it cannot consist in what can only be mastered by a few. -->
+								<!-- </p> -->
+							<!-- </div> -->
+						</div>
+					</div>
+					<!-- Louis, Leow Sheng Ang -->
+					<div class="creator">
+						<a href="pflo18.html" class="creator_pics">
+							<!-- <img src="images/creatorsSection/Louis.webp" alt="Missing Image" class=""> -->
+							<img data-src="images/creatorsSection/Louis.webp" alt="Missing Image" class="lazyload">
+						</a>
+						<div class="creator_titleNdes text-white text-center text-wrap">
+							<div class="creatorTitle">
+								<h3>Leow Sheng Ang</h3>
+							</div>
+							<!-- <hr> -->
+							<!-- <div class="creatorDes"> -->
+								<!-- <p> -->
+									<!-- Some seek their good or happiness in power; others in science, and others in the pleasures of the flesh.  -->
+									<!-- But those who come truly close to the good understand that it cannot consist in what can only be mastered by a few. -->
+								<!-- </p> -->
+							<!-- </div> -->
+						</div>
+					</div>
+					<!-- Ming Lei, Liau Ming Lei -->
+					<div class="creator">
+						<a href="pflo13.html" class="creator_pics">
+							<!-- <img src="images/creatorsSection/Ming Lei.webp" alt="Missing Image" class=""> -->
+							<img data-src="images/creatorsSection/Ming Lei.webp" alt="Missing Image" class="lazyload">
+						</a>
+						<div class="creator_titleNdes text-white text-center text-wrap">
+							<div class="creatorTitle">
+								<h3>Liau Ming Lei</h3>
+							</div>
+							<!-- <hr> -->
+							<!-- <div class="creatorDes"> -->
+								<!-- <p> -->
+									<!-- Some seek their good or happiness in power; others in science, and others in the pleasures of the flesh.  -->
+									<!-- But those who come truly close to the good understand that it cannot consist in what can only be mastered by a few. -->
+								<!-- </p> -->
+							<!-- </div> -->
+						</div>
+					</div>
+					<!-- Ding Hui, Lim Ding Hui -->
+					<div class="creator">
+						<a href="pflo3.html" class="creator_pics">
+							<!-- <img src="images/creatorsSection/Ding Hui.webp" alt="Missing Image" class=""> -->
+							<img data-src="images/creatorsSection/Ding Hui.webp" alt="Missing Image" class="lazyload">
+						</a>
+						<div class="creator_titleNdes text-white text-center text-wrap">
+							<div class="creatorTitle">
+								<h3>Lim Ding Hui</h3>
+							</div>
+							<!-- <hr> -->
+							<!-- <div class="creatorDes"> -->
+								<!-- <p> -->
+									<!-- Some seek their good or happiness in power; others in science, and others in the pleasures of the flesh.  -->
+									<!-- But those who come truly close to the good understand that it cannot consist in what can only be mastered by a few. -->
+								<!-- </p> -->
+							<!-- </div> -->
+						</div>
+					</div>
+					<!-- Michael, Michael Windura -->
+					<div class="creator">
+						<a href="pflo12.html" class="creator_pics">
+							<!-- <img src="images/creatorsSection/Michael.webp" alt="Missing Image" class=""> -->
+							<img data-src="images/creatorsSection/Michael.webp" alt="Missing Image" class="lazyload">
+						</a>
+						<div class="creator_titleNdes text-white text-center text-wrap">
+							<div class="creatorTitle">
+								<h3>Michael Windura</h3>
+							</div>
+							<!-- <hr> -->
+							<!-- <div class="creatorDes"> -->
+								<!-- <p> -->
+									<!-- Some seek their good or happiness in power; others in science, and others in the pleasures of the flesh.  -->
+									<!-- But those who come truly close to the good understand that it cannot consist in what can only be mastered by a few. -->
+								<!-- </p> -->
+							<!-- </div> -->
+						</div>
+					</div>
+					<!-- Vincent, Vincent -->
+					<div class="creator">
+						<a href="pflo15.html" class="creator_pics">
+							<!-- <img src="images/creatorsSection/Vincent.webp" alt="Missing Image" class=""> -->
+							<img data-src="images/creatorsSection/Vincent.webp" alt="Missing Image" class="lazyload">
+						</a>
+						<div class="creator_titleNdes text-white text-center text-wrap">
+							<div class="creatorTitle">
+								<h3>Vincent</h3>
+							</div>
+							<!-- <hr> -->
+							<!-- <div class="creatorDes"> -->
+								<!-- <p> -->
+									<!-- Some seek their good or happiness in power; others in science, and others in the pleasures of the flesh.  -->
+									<!-- But those who come truly close to the good understand that it cannot consist in what can only be mastered by a few. -->
+								<!-- </p> -->
+							<!-- </div> -->
+						</div>
+					</div>
+					<!-- Hazeera, Wan Nur Hazeera Binti Wan Ab. Halim -->
+					<div class="creator">
+						<a href="pflo7.html" class="creator_pics">
+							<!-- <img src="images/creatorsSection/Hazeera.webp" alt="Missing Image" class=""> -->
+							<img data-src="images/creatorsSection/Hazeera.webp" alt="Missing Image" class="lazyload">
+						</a>
+						<div class="creator_titleNdes text-white text-center text-wrap">
+							<div class="creatorTitle">
+								<h3>Wan Nur Hazeera Binti Wan Ab. Halim</h3>
+							</div>
+							<!-- <hr> -->
+							<!-- <div class="creatorDes"> -->
+								<!-- <p> -->
+									<!-- Some seek their good or happiness in power; others in science, and others in the pleasures of the flesh.  -->
+									<!-- But those who come truly close to the good understand that it cannot consist in what can only be mastered by a few. -->
+								<!-- </p> -->
+							<!-- </div> -->
+						</div>
+					</div>
+					<!-- Zi Qi, Woon Zi Qi -->
+					<div class="creator">
+						<a href="pflo17.html" class="creator_pics">
+							<!-- <img src="images/creatorsSection/Zi Qi.webp" alt="Missing Image" class=""> -->
+							<img data-src="images/creatorsSection/Zi Qi.webp" alt="Missing Image" class="lazyload">
+						</a>
+						<div class="creator_titleNdes text-white text-center text-wrap">
+							<div class="creatorTitle">
+								<h3>Woon Zi Qi</h3>
+							</div>
+							<!-- <hr> -->
+							<!-- <div class="creatorDes"> -->
+								<!-- <p> -->
+									<!-- Some seek their good or happiness in power; others in science, and others in the pleasures of the flesh.  -->
+									<!-- But those who come truly close to the good understand that it cannot consist in what can only be mastered by a few. -->
+								<!-- </p> -->
+							<!-- </div> -->
+						</div>
+					</div>
+					<!-- Yvonne, Yvonne Ngor Yi Wen -->
+					<div class="creator">
+						<a href="pflo16.html" class="creator_pics">
+							<!-- <img src="images/creatorsSection/Yvonne.webp" alt="Missing Image" class=""> -->
+							<img data-src="images/creatorsSection/Yvonne.webp" alt="Missing Image" class="lazyload">
+						</a>
+						<div class="creator_titleNdes text-white text-center text-wrap">
+							<div class="creatorTitle">
+								<h3>Yvonne Ngor Yi Wen</h3>
+							</div>
+							<!-- <hr> -->
+							<!-- <div class="creatorDes"> -->
+								<!-- <p> -->
+									<!-- Some seek their good or happiness in power; others in science, and others in the pleasures of the flesh.  -->
+									<!-- But those who come truly close to the good understand that it cannot consist in what can only be mastered by a few. -->
+								<!-- </p> -->
+							<!-- </div> -->
+						</div>
+					</div>
+				</div>
+				
+				<!-- Creator Carousel Buttons -->
+				<div id="creatorBtns" class="">
+					<div class="leftBtn" onclick="changeCreators_prevLoop()">
+						<!-- <img src="images/creatorsSection/creatorsSection_img_arrowBtn.png" alt="Missing Image" class="img-fluid"> -->
+						<img src="images/arrowBtn_2.png" alt="Missing Image" class="img-fluid">
+					</div>
+					<div class="rightBtn" onclick="changeCreators_nextLoop()">
+						<!-- <img src="images/creatorsSection/creatorsSection_img_arrowBtn.png" alt="Missing Image" class="img-fluid"> -->
+						<img src="images/arrowBtn_2.png" alt="Missing Image" class="img-fluid">
+					</div>
+				</div>
+			</div>
+			
+			<!-- Creator Dialog Box -->
+			<!-- <div id="creatorsSection_Scene_mascotDialog"> -->
+				<!-- <div id="creatorSection_dialogBox"> -->
+					<!-- <p class="dialogBoxTxt"> -->
+						<!-- Introducing the creators of this universe, and immi! Click the arrows on the right or left to view more creators and their works. *Beep* -->
+					<!-- </p> -->
+				<!-- </div> -->
+				<!-- <img src="images/img_mascot.png" alt="Missing Image" class="mascotImg"> -->
+			<!-- </div> -->
+		</section>
+		
+		<!-- Project Section -->
+		<section id="projectSection" class="webSection webSection_snap">
+			<div id="projectScene">
+				<div id="projectSelect">
+					<!-- Hidden Instinct -->
+					<div class="project">
+						<!-- <a href="portfolioPage_projects.html" class="project_imgIsland"> -->
+							<!-- <img src="assets/projectPage/islands/hiddenInstinct_Island.webp" class="mx-auto d-block"> -->
+						<!-- </a> -->
+						<div class="project_imgIsland" onclick="goTo_portfolioPageProjects(7)">
+							<!-- <img src="assets/projectPage/islands/hiddenInstinct_Island.webp" class="mx-auto d-block"> -->
+							
+							<!-- <img data-src="assets/projectPage/islands/hiddenInstinct_Island.webp" class="lazyload mx-auto d-block"> -->
+							<img data-src="https://i.imgur.com/KtJyKAg.gif" class="lazyload mx-auto d-block">
+						</div>	
+						<!-- <img src="assets/projectPage/titles/hiddenInstinct_Title.png" class="pTitle"> -->
+						<div class="pTitle">
+							<!-- <img src="assets/projectPage/titles/temp/hiddenInstinct_Title.png" class="pTitle"> -->
+							<img data-src="assets/projectPage/titles/temp/hiddenInstinct_Title.png" class="lazyload">
+						</div>
+					</div>
+					<!-- Crepusculum -->
+					<div class="project">
+						<!-- <a href="portfolioPage_projects.html" class="project_imgIsland"> -->
+							<!-- <img src="assets/projectPage/islands/Crepusculum_Island.webp" class="mx-auto d-block"> -->
+						<!-- </a> -->
+						<div class="project_imgIsland" onclick="goTo_portfolioPageProjects(4)">
+							<!-- <img src="assets/projectPage/islands/Crepusculum_Island.webp" class="mx-auto d-block"> -->
+							<!-- <img data-src="assets/projectPage/islands/Crepusculum_Island.webp" class="lazyload mx-auto d-block"> -->
+							<img data-src="https://i.imgur.com/QMt9CLC.gif" class="lazyload mx-auto d-block">
+						</div>
+						<!-- <img src="assets/projectPage/titles/Crepusculum_Title.png" class="pTitle" style="transform: scale(1.2) translateY(30%);"> -->
+						<div class="pTitle">
+							<!-- <img src="assets/projectPage/titles/temp/Crepusculum_Title.png" class="pTitle"> -->
+							<img data-src="assets/projectPage/titles/temp/Crepusculum_Title.png" class="lazyload">
+						</div>
+					</div>
+					<!-- Escape Island -->
+					<div class="project">
+						<!-- <a href="portfolioPage_projects.html" class="project_imgIsland"> -->
+							<!-- <img src="assets/projectPage/islands/Escape_Island.webp" class="mx-auto d-block"> -->
+						<!-- </a> -->
+						<div class="project_imgIsland" onclick="goTo_portfolioPageProjects(3)">
+							<!-- <img src="assets/projectPage/islands/Escape_Island.webp" class="mx-auto d-block"> -->
+							<!-- <img data-src="assets/projectPage/islands/Escape_Island.webp" class="lazyload mx-auto d-block"> -->
+							<img data-src="https://i.imgur.com/hqcsmZn.gif" class="lazyload mx-auto d-block">
+						</div>
+						<!-- <img src="assets/projectPage/titles/Escape_Title.png" class="pTitle"> -->
+						<div class="pTitle">
+							<!-- <img src="assets/projectPage/titles/temp/Escape_Title.png" class="pTitle"> -->
+							<img data-src="assets/projectPage/titles/temp/Escape_Title.png" class="lazyload">
+						</div>
+					</div>
+					<!-- Ivan -->
+					<div class="project">
+						<!-- <a href="portfolioPage_projects.html" class="project_imgIsland"> -->
+							<!-- <img src="assets/projectPage/islands/ivanCD_Island.webp" class="mx-auto d-block"> -->
+						<!-- </a> -->
+						<div class="project_imgIsland" onclick="goTo_portfolioPageProjects(5)">
+							<!-- <img src="assets/projectPage/islands/ivanCD_Island.webp" class="mx-auto d-block"> -->
+							<!-- <img data-src="assets/projectPage/islands/ivanCD_Island.webp" class="lazyload mx-auto d-block"> -->
+							<img data-src="https://i.imgur.com/y54Rfxh.gif" class="lazyload mx-auto d-block">
+						</div>
+						<!-- <img src="assets/projectPage/titles/ivanCD_Title.png" class="pTitle" style="transform: scale(0.65) translateY(-50%);"> -->
+						<div class="pTitle">
+							<!-- <img src="assets/projectPage/titles/temp/ivanCD_Title.png" class="pTitle"> -->
+							<img data-src="assets/projectPage/titles/temp/ivanCD_Title.png" class="lazyload">
+						</div>
+					</div>
+					<!-- Legend Of Kham -->
+					<div class="project">
+						<!-- <a href="portfolioPage_projects.html" class="project_imgIsland"> -->
+							<!-- <img src="assets/projectPage/islands/legendOfKham_Island.webp" class="mx-auto d-block"> -->
+						<!-- </a> -->
+						<div class="project_imgIsland" onclick="goTo_portfolioPageProjects(6)">
+							<!-- <img src="assets/projectPage/islands/legendOfKham_Island.webp" class="mx-auto d-block"> -->
+							<!-- <img data-src="assets/projectPage/islands/legendOfKham_Island.webp" class="lazyload mx-auto d-block"> -->
+							<img data-src="https://i.imgur.com/gXcCwpb.gif" class="lazyload mx-auto d-block">
+						</div>
+						<!-- <img src="assets/projectPage/titles/legendOfKham_Title.png" class="pTitle"> -->
+						<div class="pTitle">
+							<!-- <img src="assets/projectPage/titles/temp/legendOfKham_Title.png" class="pTitle"> -->
+							<img data-src="assets/projectPage/titles/temp/legendOfKham_Title.png" class="lazyload">
+						</div>
+					</div>
+					<!-- Murasaki -->
+					<div class="project">
+						<!-- <a href="portfolioPage_projects.html" class="project_imgIsland"> -->
+							<!-- <img src="assets/projectPage/islands/murasakEnNoDensetsu_Island.webp" class="mx-auto d-block"> -->
+						<!-- </a> -->
+						<div class="project_imgIsland" onclick="goTo_portfolioPageProjects(2)">
+							<!-- <img src="assets/projectPage/islands/murasakEnNoDensetsu_Island.webp" class="mx-auto d-block"> -->
+							<!-- <img data-src="assets/projectPage/islands/murasakEnNoDensetsu_Island.webp" class="lazyload mx-auto d-block"> -->
+							<img data-src="https://i.imgur.com/A3wJ4Hk.gif" class="lazyload mx-auto d-block">
+						</div>
+						<!-- <img src="assets/projectPage/titles/murasakEnNoDensetsu_Title.png" class="pTitle"> -->
+						<div class="pTitle">
+							<!-- <img src="assets/projectPage/titles/temp/murasakEnNoDensetsu_Title.png" class="pTitle"> -->
+							<img data-src="assets/projectPage/titles/temp/murasakEnNoDensetsu_Title.png" class="lazyload">
+						</div>
+					</div>
+					<!-- Krik Krak -->
+					<div class="project">
+						<!-- <a href="portfolioPage_projects.html" class="project_imgIsland"> -->
+							<!-- <img src="assets/projectPage/islands/KrikKrak_Island.webp" class="mx-auto d-block"> -->
+						<!-- </a> -->
+						<div class="project_imgIsland" onclick="goTo_portfolioPageProjects(1)">
+							<!-- <img src="assets/projectPage/islands/KrikKrak_Island.webp" class="mx-auto d-block"> -->
+							<!-- <img data-src="assets/projectPage/islands/KrikKrak_Island.webp" class="lazyload mx-auto d-block"> -->
+							<img data-src="https://i.imgur.com/rdUAi7L.gif" class="lazyload mx-auto d-block">
+						</div>
+						<!-- <img src="assets/projectPage/titles/murasakEnNoDensetsu_Title.png" class="pTitle"> -->
+						<div class="pTitle">
+							<!-- <img src="assets/projectPage/titles/temp/Krik Krak.png"> -->
+							<img data-src="assets/projectPage/titles/temp/Krik Krak.png" class="lazyload">
+						</div>
+					</div>
+					<!-- Chasing Nutcracker -->
+					<div class="project">
+						<!-- <a href="portfolioPage_projects.html" class="project_imgIsland"> -->
+							<!-- <img src="assets/projectPage/islands/chasinNut_Island.webp" class="mx-auto d-block"> -->
+						<!-- </a> -->
+						<div class="project_imgIsland" onclick="goTo_portfolioPageProjects(0)">
+							<!-- <img src="assets/projectPage/islands/chasinNut_Island.webp" class="mx-auto d-block"> -->
+							<!-- <img data-src="assets/projectPage/islands/chasinNut_Island.webp" class="lazyload mx-auto d-block"> -->
+							<img data-src="https://i.imgur.com/Z4uQTmI.gif" class="lazyload mx-auto d-block">
+						</div>
+						<!-- <img src="assets/projectPage/titles/murasakEnNoDensetsu_Title.png" class="pTitle"> -->
+						<div class="pTitle">
+							<!-- <img src="assets/projectPage/titles/temp/chasinNut_Title.png"> -->
+							<img data-src="assets/projectPage/titles/temp/chasinNut_Title.png" class="lazyload">
+						</div>
+					</div>
+				</div>
+
+				<!-- Island Select Button Scene -->
+				<div id="projectBtns">
+					<div class="leftBtn" onclick="changeProject_prev()">
+						<img src="images/arrowBtn_2.png" alt="Missing Image" class="img-fluid">
+					</div>
+					<div class="rightBtn" onclick="changeProject_next()">
+						<img src="images/arrowBtn_2.png" alt="Missing Image" class="img-fluid">
+					</div>
+				</div>
+			</div>
+			
+			<!-- Projects Dialog Box -->
+			<div id="projectSection_Scene_mascotDialog">
+				<!-- <img src="images/img_dialogBox.png" alt="Missing Image" class="dialogBox"> -->
+				<div id="projectSection_dialogBox">
+					<p class="dialogBoxTxt">
+						<!-- Immi can't imagine being stuck behind walls (;´༎ຶД༎ຶ`) -->
+						<!-- Immi too wants to have powers to help others! *Beepedy Boop~* (☆▽☆) -->
+					</p>
+				</div>
+				<img src="images/img_mascot.png" alt="Missing Image" class="mascotImg">
+			</div>
+		</section>
+		
+		<!-- About Us Section -->
+		<section id="aboutSection" class="webSection webSection_snap">
+			<div class="aboutScene">
+				<div class="container">
+					<div class="carousel text-center">
+						<!-- <div class="slide"><img width="100%" data-src="assets/aboutUs/slides/1.png" class="lazyload"></div> -->
+						<!-- <div class="slide"><img width="100%" data-src="assets/aboutUs/slides/2.png" class="lazyload"></div> -->
+						<!-- <div class="slide"><img width="100%" data-src="assets/aboutUs/slides/3.png" class="lazyload"></div> -->
+						<!-- <div class="slide"><img width="100%" data-src="assets/aboutUs/slides/4.png" class="lazyload"></div> -->
+						<!-- <div class="slide"><img width="100%" data-src="assets/aboutUs/slides/5.png" class="lazyload"></div> -->
+						<!-- <div class="slide"><img width="100%" data-src="assets/aboutUs/slides/6.png" class="lazyload"></div> -->
+						<!-- <div class="slide"><img width="100%" data-src="assets/aboutUs/slides/7.png" class="lazyload"></div> -->
+						
+						<div class="slide"><img data-src="assets/aboutUs/slides/1.webp" class="lazyload"></div>
+						<div class="slide"><img data-src="assets/aboutUs/slides/2.webp" class="lazyload"></div>
+						<div class="slide"><img data-src="assets/aboutUs/slides/3.webp" class="lazyload"></div>
+						<div class="slide"><img data-src="assets/aboutUs/slides/4.webp" class="lazyload"></div>
+						<div class="slide"><img data-src="assets/aboutUs/slides/5.webp" class="lazyload"></div>
+						<div class="slide"><img data-src="assets/aboutUs/slides/6.webp" class="lazyload"></div>
+						<div class="slide"><img data-src="assets/aboutUs/slides/7.webp" class="lazyload"></div>
+						<div class="slide"><img data-src="assets/aboutUs/slides/8.webp" class="lazyload"></div>
+						<div class="slide"><img data-src="assets/aboutUs/slides/9.webp" class="lazyload"></div>
+					
+						<!-- <div class="slide">1</div> -->
+						<!-- <div class="slide">2</div> -->
+						<!-- <div class="slide">3</div> -->
+						<!-- <div class="slide">4</div> -->
+						<!-- <div class="slide">5</div> -->
+						<!-- <div class="slide">6</div> -->
+					</div>
+				</div>
+				<div class="prev" onclick="changeSlide_prev()"><img src="assets/aboutUs/arrow.png"></div>
+				<div class="next" onclick="changeSlide_next()"><img src="assets/aboutUs/arrow.png"></div>
+			</div>
+			<img class="" src="assets/aboutUs/fg.png" id="aboutFG">
+		</section>
+		<!-- <section id="aboutus" class="webSection webSection_snap"> -->
+			<!-- <div class="container py-5"> -->
+				<!-- <div id="abtcarousel" class="carousel slide" data-bs-ride="carousel"> -->
+					<!-- <div class="carousel-inner"> -->
+						<!-- <div class="carousel-item active"> -->
+							<!-- <div style="margin: auto; width: 836px; height: 500px; background-color: rgba(227, 224, 255, 0.68); border-radius: 11px;" class="text-center pt-5"> -->
+								<!-- <span style="font-weight:700;font-size:50px;font-family:gzsg;" class="text-white">ABOUT US</span> -->
+							<!-- </div> -->
+						<!-- </div> -->
+						<!-- <div class="carousel-item"> -->
+						  <!-- <div style="margin: auto; width: 836px; height: 500px; background-color: rgba(227, 224, 255, 0.68); border-radius: 11px;"> -->
+						  <!-- </div> -->
+						<!-- </div> -->
+						<!-- <div class="carousel-item"> -->
+						  <!-- <div style="margin: auto; width: 836px; height: 500px; background-color: rgba(227, 224, 255, 0.68); border-radius: 11px;"> -->
+						  <!-- </div> -->
+						<!-- </div> -->
+					<!-- </div> -->
+					<!-- <button class="carousel-control-prev" type="button" data-bs-target="#abtcarousel" data-bs-slide="prev"> -->
+						<!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+						<!-- <span class="visually-hidden">Previous</span> -->
+					<!-- </button> -->
+					<!-- <button class="carousel-control-next" type="button" data-bs-target="#abtcarousel" data-bs-slide="next"> -->
+						<!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+						<!-- <span class="visually-hidden">Next</span> -->
+					<!-- </button> -->
+				<!-- </div> -->
+			<!-- </div> -->
+		<!-- </section> -->
+		
+		
+		<!-- Bootstrap Required JS Bundle Libraries-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+		<!-- JQuery -->
+		<!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+		<script src="jquery/jquery-3.6.0.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+		<!-- Lazy Load Library, for Performance boost -->
+		<script src="javascript/lazysizes-gh-pages/lazysizes.min.js" async=""></script>
+		<!-- Self Made JS -->
+		<script type="text/javascript" src="javascript/script.js"></script>
+		<script type="text/javascript" src="javascript/script_loaderSection.js"></script>
+		<script type="text/javascript" src="javascript/script_mainPage.js"></script>
+		<script type="text/javascript" src="javascript/script_homeSection.js"></script>
+		<script type="text/javascript" src="javascript/script_creatorsSection.js"></script>
+		<script type="text/javascript" src="javascript/script_projectSection.js"></script>	
+		<script type="text/javascript" src="javascript/script_aboutSection.js"></script>	
+	</body>
+</html>

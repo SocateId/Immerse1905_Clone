@@ -1,0 +1,90 @@
+#conceptIslands, #ShortfilmIslands {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('https://d2kq0urxkarztv.cloudfront.net/6217561c350a010022a67885/3451246/upload-d429f3c2-8e31-48d8-a226-6d24cef21f28.jpg?e=webp');
+}
+#carouselCD, #carouselSH {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+}
+#carouselCD div, #carouselSH div {
+	position: absolute;
+	transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+	height: 350px; 
+	width: 350px;
+	object-fit: cover;
+	will-change: transform;
+}
+#carouselCD div img, #carouselSH div img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	transition: width 1s, transform 500ms ease, opacity 500ms ease;
+	will-change: transform;
+}
+
+.C1 {
+	z-index: 8;
+	transform: translateY(60%) translateX(130%);
+}
+
+.C2 {
+	z-index: 6;
+	opacity: 0.7;
+	transform: translateY(48%) translateX(240%);
+}
+
+.C3 {
+	z-index: 4;
+	opacity: 0.3;
+	transform: translateY(-10%) translateX(190%);
+}
+
+.C4 {
+	z-index: 1;
+	opacity: 0.02;
+	transform: translateY(-15%) translateX(130%);
+}
+
+.C5 {
+	z-index: 4;
+	opacity: 0.3;
+	transform: translateY(-10%) translateX(70%);
+}
+
+.C6 {
+	z-index: 6;
+	opacity: 0.7;
+	transform: translateY(48%) translateX(20%);
+}
+
+.posterB {
+	position: absolute;
+	z-index: 10;
+	/* display: none; */
+	/* visibility: hidden; */
+	opacity: 0;
+	transform: translateY(-10%) translateX(-98%) scale(.8);
+}
+.C1 .posterB {
+	/* display: inline; */
+	/* visibility: visible; */
+	opacity: 0.9;
+	transform: translateY(-10%) translateX(-98%) scale(.8);
+}
+.S1 {
+	z-index: 8;
+		 transform: translateY(60%) translateX(130%);
+}
+
+.S2 {
+	z-index: 6;
+	opacity: 0.7;
+		 transform: translateY(48%) translateX(240%);
+}
+.S6 {
+	z-index: 6;
+	opacity: 0.7;
+	transform: translateY(48%) translateX(20%);
+}

@@ -1,0 +1,30 @@
+@import "style_portfolioSection_C.css";
+@import "style_portfolioSection_DE.css";
+
+#portfolioSection {
+	background-image: url("../images/portfolioSection/Portfolio_BG.jpg");
+	/* background-image: url("../images/background_1.png"); */
+	background-repeat: no-repeat;
+	/* background-position: contain, cover; */
+	/* background-color: black; */
+	background-size: 100% 100%;
+	
+	/* overflow: hidden; */
+	
+	width: var(--sectionWidth);
+	height: fit-content;
+	
+	padding-left: 0%; padding-right: 0%;
+	padding-top: 5%;
+	
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+}
+
+.portfolioSection_sub {
+	width: var(--sectionWidth);
+	height: var(--sectionHeight);
+	
+	/* margin: 0px; */
+	/* padding: 0px; */
+}

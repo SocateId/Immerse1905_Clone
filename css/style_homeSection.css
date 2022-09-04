@@ -1,0 +1,619 @@
+#homeSection {
+	background-image: url("../images/homeSection/homeSection_img_background.jpg");
+	/* background-image: url("../images/homeSection/Main Page.jpg"); */
+	background-repeat: no-repeat;
+	background-position: center;
+	/* background-color: black; */
+	background-size: 100% 100%;
+	
+	/* box-shadow: 0 0 15px 10px var(--backgroundColor_1) inset; */
+	
+	overflow: hidden;
+	
+	/* width: 100%; */
+	/* height: 100vh; */
+	/* height: 500px; */
+	/* margin: 0px; */
+	/* padding: 0px; */
+	
+	/* border-style: solid; */
+	/* border-color: blue; */
+}
+
+/* Floating Islands Scene Start */
+#islandScene {
+	position: relative;
+	/* margin: 0; */
+	/* margin-top: auto; */
+	margin-top: calc(var(--sectionHeight) - (var(--sectionHeight) * 0.92));
+	/* margin-bottom: auto; */
+	padding: 0;
+	
+	
+	width: var(--sectionWidth);
+	height: calc(var(--sectionHeight) - var(--sectionHeight_header));
+	
+	/* border: 5px solid green; */
+}
+#islandSelect {
+	position: absolute;
+	/* position: relative; */
+	width: 100%;
+	height: 100%;
+	padding-top: 3%;
+	
+	/* border: 5px solid orange; */
+}
+
+.island {
+	position: absolute;
+	padding: 0px;
+	margin: 0px;
+	
+	/* max-width: 75%; */
+	/* width: 75%; */
+	width: 64%;
+	/* width: 50%; */
+	/* max-height: auto; */
+	height: auto;
+
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto;
+	
+	-moz-transition: 
+		transform 1000ms ease, 
+		/* width 500ms ease,  */
+		/* height 500ms ease,  */
+		z-index 500ms ease, 
+		/* top 500ms ease,  */
+		/* left 500ms ease,  */
+		/* right 500ms ease, */
+		/* bottom 500ms ease, */
+		opacity 500ms ease;
+	-webkit-transition: 
+		transform 1000ms ease, 
+		/* width 500ms ease,  */
+		/* height 500ms ease,  */
+		z-index 500ms ease, 
+		/* top 500ms ease,  */
+		/* left 500ms ease,  */
+		/* right 500ms ease, */
+		/* bottom 500ms ease, */
+		opacity 500ms ease;
+	transition: 
+		transform 1000ms ease, 
+		/* width 500ms ease,  */
+		/* height 500ms ease,  */
+		z-index 500ms ease, 
+		/* top 500ms ease,  */
+		/* left 500ms ease,  */
+		/* right 500ms ease, */
+		/* bottom 500ms ease, */
+		opacity 500ms ease;
+	
+	/* border: 5px solid white; */
+}
+.island > .island_link {
+	display: block;
+	
+	/* margin-left: auto;  */
+	/* margin-right: auto; */
+	
+	/* height: 100%; */
+	/* width: 50%; */
+	/* width: 100%; */
+	
+	-moz-transition: 
+		transform 1000ms ease, 
+		z-index 500ms ease, 
+		opacity 500ms ease;
+	-webkit-transition: 
+		transform 1000ms ease, 
+		z-index 500ms ease, 
+		opacity 500ms ease;
+	transition: 
+		transform 1000ms ease, 
+		z-index 500ms ease, 
+		opacity 500ms ease;
+	
+	/* border: 5px solid pink; */
+}
+.island > .island_link > img {
+	display: block;
+	
+	margin: 0px;
+	padding: 0px;
+	
+	-moz-transition: filter 0.5s linear;
+	-webkit-transition: filter 0.5s linear;
+	transition: filter 0.5s linear;
+	
+	width: 100%;
+	/* height: 60vh; */
+	height: auto;
+	
+	/* border: 5px solid green; */
+}
+.island > h1 {
+	/* position: relative; */
+	position: absolute;
+	z-index: 20;
+	
+	bottom: 0;
+	
+	height: fit-content;
+	width: 100%;
+	
+	pointer-events: none;
+	
+	text-align: center;
+	/* force update */
+	/* font-family: "Arial Narrow", sans-serif; */
+	font-family: var(--titleFont);
+	font-weight: bold;
+	font-size: 7vh;
+	/* font-size: 3.5vw; */
+	text-transform: uppercase;
+	color: var(--txtColor);
+	
+	/* padding-right: 3%; */
+	padding-left: 5%;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	
+	
+	-moz-transition: 
+		transform 1000ms ease,
+		opacity 0.5s linear;
+	-webkit-transition: 
+		transform 1000ms ease,
+		opacity 0.5s linear;
+	transition: 
+		transform 1000ms ease,
+		opacity 0.5s linear;
+	
+	/* border: 5px solid orange; */
+}
+
+.island_main {
+	z-index: 4;
+	
+	-moz-transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
+	
+	/* -moz-transform: scale(110%, 110%); */
+	/* -webkit-transform: scale(110%, 110%); */
+	/* transform: scale(110%, 110%); */
+	
+	/* transform-origin: 0% 0%; */
+	
+	opacity: 1;
+	
+	/* animation: float1 6s ease-in-out infinite; */
+}
+.island_main > .island_link > img {
+	-moz-animation: float1 6s ease-in-out infinite;
+	-webkit-animation: float1 6s ease-in-out infinite;
+	animation: float1 6s ease-in-out infinite;
+}
+.island_main > .island_link:hover {
+	-moz-transform: scale(1.25, 1.25);
+	-webkit-transform: scale(1.25, 1.25);
+	transform: scale(1.25, 1.25);
+}
+
+.island_next {
+	z-index: 3;
+	
+	-moz-transform: translate(46%, 0%) scale(0.61, 0.61);
+	-webkit-transform: translate(46%, 0%) scale(0.61, 0.61);
+	transform: translate(46%, 0%) scale(0.61, 0.61);
+	/* transform: scale(75%); */
+	/* transform-origin: 27% 0%; */
+	
+	opacity: 1;
+
+	/* animation: float2 6s ease-in-out infinite; */
+}
+.island_next > .island_link > img {
+	-webkit-filter: blur(8px);
+	filter: blur(8px);
+	/* -webkit-filter: blur(2px); */
+	/* filter: blur(2px); */
+	-moz-animation: float2 6s ease-in-out infinite;
+	-webkit-animation: float2 6s ease-in-out infinite;
+	animation: float2 6s ease-in-out infinite;
+}
+
+.island_prev {
+	/* max-width: 40%; */
+	z-index: 2;
+	
+	-moz-transform: translate(-46%, 0%) scale(0.61, 0.61);
+	-webkit-transform: translate(-46%, 0%) scale(0.61, 0.61);
+	transform: translate(-46%, 0%) scale(0.61, 0.61);
+	
+	/* -moz-transform: translate(-46%, 0%) scale(61%, 61%); */
+	/* -webkit-transform: translate(-46%, 0%) scale(61%, 61%); */
+	/* transform: translate(-46%, 0%) scale(61%, 61%); */
+	
+	/* transform: translate(-30%, 3%) scale(50%); */
+	/* transform: scale(50%); */
+	/* transform-origin: -30% 3%; */
+	
+	opacity: 1;
+	
+	/* top: 21%; left: -45%; */
+	
+	/* animation: float3 6s ease-in-out infinite; */
+}
+.island_prev > .island_link > img {
+	-webkit-filter: blur(8px);
+	filter: blur(8px);
+	/* -webkit-filter: blur(4px); */
+	/* filter: blur(4px); */
+	-moz-animation: float3 6s ease-in-out infinite;
+	-webkit-animation: float3 6s ease-in-out infinite;
+	animation: float3 6s ease-in-out infinite;
+}
+
+.island_next > .island_link,
+.island_prev > .island_link {
+	pointer-events: none;
+}
+
+.island_next > h1,
+.island_prev > h1,
+.island_hidden > h1 {
+	-moz-transform: scale(1.39, 1.39);
+	-webkit-transform: scale(1.39, 1.39);
+	transform: scale(1.39, 1.39);
+	
+	/* -moz-transform: scale(139%, 139%); */
+	/* -webkit-transform: scale(139%, 139%); */
+	/* transform: scale(139%, 139%); */
+	
+	/* opacity: 0; */
+}
+
+.island_hidden {
+	z-index: 1;
+	
+	-moz-transform: translate(0%, 0%) scale(0.01, 0.01);
+	-webkit-transform: translate(0%, 0%) scale(0.01, 0.01);
+	transform: translate(0%, 0%) scale(0.01, 0.01);
+	
+	/* -moz-transform: translate(0%, 0%) scale(1%, 1%); */
+	/* -webkit-transform: translate(0%, 0%) scale(1%, 1%); */
+	/* transform: translate(0%, 0%) scale(1%, 1%); */
+	
+	opacity: 0;
+}
+
+.island_hidden > .island_link > img {
+	-webkit-filter: blur(8px);
+	filter: blur(8px);
+}
+
+/* Dialog Box */
+#homeSection_dialog {
+	position: absolute;
+	z-index: 40;
+	/* pointer-events: none; */
+	
+	width: 31.8%;
+	height: 22.4%;
+	
+	/* width: 35%; */
+	/* height: 25%; */
+	/* max-height: 25%; */
+	
+	top: 15.5%;
+	right: 11.1%;
+	
+	/* top: 12%; */
+	/* right: 10.5%; */
+	
+	/* border: 5px solid pink; */
+}
+#homeSection_dialog > div {
+	background-image: url("../images/img_dialogBox.webp");
+	background-repeat: no-repeat;
+	background-position: center;
+	/* background-color: black; */
+	background-size: 100% 100%;
+	
+	display: block;
+	
+	width: 100%;
+	height: 100%;
+	/* max-height: 20%; */
+	/* height: 20%; */
+	
+	top: 15%;
+	right: 10%;
+	
+	/* border: 5px solid red; */
+}
+#homeSection_dialog > div > .dialogBoxTxt {
+	position: absolute;
+	
+	left: 10%;
+	top: 22%;
+	
+	max-width: 80%;
+	
+	font-family: var(--titleFont);
+	/* font-weight: bold; */
+	font-size: 2.3921vh;
+	text-transform: uppercase;
+	color: var(--txtColor);
+	
+	/* border: 5px solid green; */
+}
+#homeSection_dialog > img {
+	display: block;
+	position: relative;
+	
+	width: 100%;
+	height: 100%;
+	/* max-width: 100%; */
+	max-height: 100%;
+	
+	/* border: 5px solid yellow; */
+}
+
+/* Island Arrow Buttons */
+#islandBtns {
+	position: relative;
+	/* width: 100%; */
+	/* height: auto; */
+	/* min-height: 61.94%; */
+	height: 100%;
+	
+	margin: 0;
+	/* margin-top: 25%; */
+	/* margin-top: 18%; */
+	padding-top: 20%;
+	
+	/* border: 5px solid black; */
+}
+#islandBtns > .leftBtn,
+#islandBtns > .rightBtn {
+	position: absolute;
+	z-index: 20;
+	
+	/* width: fit-content; */
+	width: 10.5%;
+	/* width: calc(100vw / 72); */
+	/* height: fit-content; */
+	height: 15%;
+	/* height: calc(100vh / 121); */
+	
+	cursor: pointer;
+	
+	/* border: 5px solid yellow; */
+}
+#islandBtns > .leftBtn > img,
+#islandBtns > .rightBtn > img {
+	width: 67.29%;
+	height: auto;
+	min-height: 61.94%;
+	/* max-height: 61.94%; */
+	
+	/* border: 5px solid yellow; */
+}
+#islandBtns > .leftBtn {
+	left: 28.5%;
+	/* left: 15%; */
+}
+#islandBtns > .rightBtn {
+	right: 24%;
+	/* right: 28.5%; */
+	/* right: 15%; */
+}
+#islandBtns > .rightBtn > img {
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+/* Floating Islands Scene End */
+
+
+/* Foreground Scene */
+#foreground_scene {
+	position: absolute;
+	z-index: 50;
+	
+	bottom: 0;
+	
+	overflow: hidden;
+	
+	pointer-events: none;
+	
+	padding-left: 5%;
+	
+	height: 31%;
+	/* height: fit-content; */
+	width: var(--sectionWidth);
+	
+	/* border: 5px solid white; */
+}
+#foreground_scene > img {
+	display: block;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	max-width: 100%;
+	/* max-height: 100%; */
+	max-height: calc(var(--sectionHeight) / 3);
+	
+	height: 100%;
+	/* height: auto; */
+	/* width: 100%; */
+	width: auto;
+	
+	/* border: 5px solid orange; */
+}
+
+/* Cliff & Mascot Scene Start*/
+#cliffChar_scene {
+	position: relative;
+	
+	width: 25%;
+	height: 100vh;
+	
+	/* border-style: solid; */
+	/* border-color: green; */
+}
+#cliffNchar {
+	position: absolute;
+	/* position: fixed; */
+	padding: 0px;
+	margin: 0px;
+	
+	right: 0;
+	bottom: 0;
+	
+	width: 100%;
+	/* max-height: 950px; */
+	height: 100%;
+	/* min-height: 55%; */
+	
+	/* border-style: solid; */
+	/* border-color: red; */
+}
+#cliff {
+	position: absolute;
+	
+	right: 0;
+	bottom: 0;
+	
+	z-index: 10;
+	
+	/* width: 200%; */
+	width: 100%;
+	height: auto;
+	
+	/* border-style: solid; */
+	/* border-color: green; */
+}
+#cliff > img{
+	-moz-transform: scale(1.8, 1.7);
+	-webkit-transform: scale(1.8, 1.7);
+	transform: scale(1.8, 1.7);
+	
+	/* -moz-transform: scale(180%, 170%); */
+	/* -webkit-transform: scale(180%, 170%); */
+	/* transform: scale(180%, 170%); */
+	
+	-moz-transform-origin: bottom right;
+	-webkit-transform-origin: bottom right;
+	transform-origin: bottom right;
+}
+#cliffChar {
+	position: absolute;
+	z-index: 11;
+	
+	margin: 0;
+	padding: 0;
+	/* top: 72%; */
+	left: -35%;
+	bottom: 0;
+	/* right: 130%; */
+	/* bottom: 0; */
+	/* right: 0; */
+	
+	/* transform: translate(-385%, -145%) scale(120%); */
+	
+	width: 25%;
+	height: auto;
+	
+	/* border-style: solid; */
+	/* border-color: green; */
+}
+#cliffChar > img {
+	/* max-height: 50vh; */
+	/* height: auto; */
+	/* width: 100%; */
+	
+	-moz-transform: translate(0, -150%) scale(1.2, 1.2);
+	-webkit-transform: translate(0, -150%) scale(1.2, 1.2);
+	transform: translate(0, -150%) scale(1.2, 1.2);
+	
+	/* -moz-transform: translate(0, -150%) scale(120%, 120%); */
+	/* -webkit-transform: translate(0, -150%) scale(120%, 120%); */
+	/* transform: translate(0, -150%) scale(120%, 120%); */
+	
+	/* transform: scale(120%); */
+}
+/* Cliff & Mascot Scene End*/
+
+/* Social Media Scene */
+#socialMedia_scene {
+	position: absolute;
+	z-index: 70;
+	
+	width: 19%;
+	height: 8vh;
+	
+	left: 3%;
+	bottom: 3%;
+	/* left: 5%; */
+	/* bottom: 5%; */
+	
+	/* border: 5px solid purple; */
+}
+#socialMedia_scene > a:link,
+#socialMedia_scene > a:visited {
+	
+	height: 100%;
+	width: fit-content;
+	
+	/* border: 5px solid pink; */
+}
+#socialMedia_scene > a > img {
+	display: block;
+	/* height: auto; */
+	/* width: 100%; */
+	
+	height: 100%;
+	width: auto;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* #socialMedia_scene > div { */
+	/* position: relative; */
+	/* display: inline-block; */
+	
+	/* height: 100%; */
+	/* width: fit-content; */
+	
+	/* text-align: center; */
+	/* width: auto; */
+	/* width: calc(100%/3.5); */
+	/* width: 100%; */
+	
+	/* border-style: solid; */
+	/* border-color: orange; */
+/* } */
+/* #socialMedia_scene > div > a { */
+	/* height: fit-content; */
+	/* width: fit-content; */
+	
+	/* border-style: solid; */
+	/* border-color: pink; */
+}
+/* #socialMedia_scene > div > a > img { */
+	/* height: auto; */
+	/* width: 100%; */
+	
+	/* height: 100%; */
+	/* width: auto; */
+/* } */

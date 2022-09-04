@@ -1,0 +1,332 @@
+#projectSection {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url("../assets/projectPage/Bg.jpg");
+	/* background-image: url("../assets/projectPage/Bg_test.jpg"); */
+	
+	/* overflow: auto; */
+	overflow: hidden;
+	
+	/* border: 2px solid green; */
+}
+
+#projectScene {
+	position: relative;
+	
+	width: var(--sectionWidth);
+	height: calc(var(--sectionHeight) - var(--sectionHeight_header));
+	
+	margin-top: calc(var(--sectionHeight) - (var(--sectionHeight) * 0.82));
+	
+	/* border: 2px solid orange; */
+}
+
+#projectSelect {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-top: 5%;
+	/* margin-top: 5%; */
+	
+	/* border: 2px solid red; */
+}
+
+.project {
+	position: absolute;
+	padding: 0px;
+	margin: 0px;
+	
+	width: 50%;
+	height: 65%;
+	
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto;
+	
+	-moz-transition: 
+		transform 1000ms ease,
+		z-index 500ms ease,
+		opacity 500ms ease;
+	-webkit-transition: 
+		transform 1000ms ease,
+		z-index 500ms ease,
+		opacity 500ms ease;
+	transition: 
+		transform 1000ms ease,
+		z-index 500ms ease,
+		opacity 500ms ease;
+	
+	/* border: 5px solid white; */
+}
+.project > .project_imgIsland {
+	display: block;
+	
+	height: 100%;
+	width: 100%;
+	
+	-moz-transition: 
+		transform 1000ms ease, 
+		z-index 500ms ease, 
+		opacity 500ms ease;
+	-webkit-transition: 
+		transform 1000ms ease, 
+		z-index 500ms ease, 
+		opacity 500ms ease;
+	transition: 
+		transform 1000ms ease, 
+		z-index 500ms ease, 
+		opacity 500ms ease;
+		
+	/* border: 5px solid orange; */
+}
+.project > .project_imgIsland > img {
+	position: absolute;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+
+	-moz-transition: filter 0.5s linear;
+	-webkit-transition: filter 0.5s linear;
+	transition: filter 0.5s linear;
+
+	width: 100%;
+	/* height: 60vh; */
+	height: auto;
+
+	/* border: 5px solid green; */
+}
+.pTitle {
+	position: absolute;
+	bottom: 0;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	pointer-events: none;
+	
+	left: 0;
+	right: 0;
+	
+	/* display: flex; */
+	height: 50%;
+	width: 60%;
+	
+	-moz-transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	transition: opacity 0.5s linear;
+	
+	/* border: 2px solid pink; */
+}
+.pTitle > img {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+.projectMain {
+	-moz-transform: scale(1, 1);
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	
+	/* -moz-transform: scale(100%, 100%); */
+	/* -webkit-transform: scale(100%, 100%); */
+	/* transform: scale(100%, 100%); */
+	
+	z-index: 6;
+	opacity: 1;
+}
+.projectMain > .project_imgIsland > img {
+	-moz-animation: float1 6s ease-in-out infinite;
+	-webkit-animation: float1 6s ease-in-out infinite;
+	animation: float1 6s ease-in-out infinite;
+}
+.projectMain > .project_imgIsland:hover {
+	-moz-transform: scale(1.15, 1.15);
+	-webkit-transform: scale(1.15, 1.15);
+	transform: scale(1.15, 1.15);
+	
+	/* -moz-transform: scale(115%, 115%); */
+	/* -webkit-transform: scale(115%, 115%); */
+	/* transform: scale(115%, 115%); */
+	
+	cursor: pointer;
+}
+
+.projectNext {
+	-moz-transform: translateX(61%) scale(0.61, 0.61);
+	-webkit-transform: translateX(61%) scale(0.61, 0.61);
+	transform: translateX(61%) scale(0.61, 0.61);
+	
+	/* -moz-transform: translateX(61%) scale(61%, 61%); */
+	/* -webkit-transform: translateX(61%) scale(61%, 61%); */
+	/* transform: translateX(61%) scale(61%, 61%); */
+	
+	z-index: 2;
+	opacity: 1;
+}
+.projectNext > .project_imgIsland > img {
+	-webkit-filter: blur(8px);
+	filter: blur(8px);
+	
+	-moz-animation: float2 6s ease-in-out infinite;
+	-webkit-animation: float2 6s ease-in-out infinite;
+	animation: float2 6s ease-in-out infinite;
+}
+
+.projectPrev {
+	z-index: 2;
+	/* transform: translateX(-46%) scale(61%); */
+	
+	-moz-transform: translateX(-61%) scale(0.61, 0.61);
+	-webkit-transform: translateX(-61%) scale(0.61, 0.61);
+	transform: translateX(-61%) scale(0.61, 0.61);
+	
+	/* -moz-transform: translateX(-61%) scale(61%, 61%); */
+	/* -webkit-transform: translateX(-61%) scale(61%, 61%); */
+	/* transform: translateX(-61%) scale(61%, 61%); */
+	
+	opacity: 1;
+}
+.projectPrev > .project_imgIsland > img {
+	-webkit-filter: blur(8px);
+	filter: blur(8px);
+	
+	-moz-animation: float3 6s ease-in-out infinite;
+	-webkit-animation: float3 6s ease-in-out infinite;
+	animation: float3 6s ease-in-out infinite;
+}
+.projectNext > .pTitle,
+.projectPrev > .pTitle, 
+.projectHidden > .pTitle {
+	/* opacity: 0; */
+}
+
+.projectHidden {
+	-moz-transform: translate(0%, 0%) scale(0.01, 0.01);
+	-webkit-transform: translate(0%, 0%) scale(0.01, 0.01);
+	transform: translate(0%, 0%) scale(0.01, 0.01);
+	
+	/* -moz-transform: translate(0%, 0%) scale(1%, 1%); */
+	/* -webkit-transform: translate(0%, 0%) scale(1%, 1%); */
+	/* transform: translate(0%, 0%) scale(1%, 1%); */
+	
+	z-index: 1;
+	opacity: 0;
+}
+.projectHidden > img {
+	-webkit-filter: blur(8px);
+	filter: blur(8px);
+}
+
+.animation_Float1 {
+	-moz-animation: float1 8s ease-in-out infinite;
+	-webkit-animation: float1 8s ease-in-out infinite;
+	animation: float1 8s ease-in-out infinite;
+}
+.animation_Float2 {
+	-moz-animation: float2 8s ease-in-out infinite;
+	-webkit-animation: float2 8s ease-in-out infinite;
+	animation: float2 8s ease-in-out infinite;
+}
+.animation_Float3 {
+	-moz-animation: float3 8s ease-in-out infinite;
+	-webkit-animation: float3 8s ease-in-out infinite;
+	animation: float3 8s ease-in-out infinite;
+}
+
+#projectBtns {
+	position: relative;
+	/* width: 100%; */
+	height: 40%;
+	
+	margin: 0;
+	padding-top: 15%;
+}
+#projectBtns > .leftBtn {
+	position: absolute;
+	left: 2.5%;
+	z-index: 20;
+	width: 5%;
+	height: 5%;
+	cursor: pointer;
+}
+#projectBtns > .rightBtn {
+	position: absolute;
+	right: 2.5%;
+	z-index: 20;
+	width: 5%;
+	height: 5%;
+	cursor: pointer;
+}
+#projectBtns > .rightBtn > img {
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+/* Mascot and Dialog Box, Project Section */
+#projectSection_Scene_mascotDialog {
+	position: absolute;
+	
+	bottom: 0;
+	right: 0;
+	
+	width: 32.5%;
+	height: 29%;
+	
+	/* border: 5px solid pink; */
+}
+/* Mascot */
+#projectSection_Scene_mascotDialog > .mascotImg {
+	display: inline-block;
+	position: absolute;
+	
+	bottom: 0;
+	right: 0;
+	
+	margin-right: -1%;
+	
+	width: auto;
+	height: 79%;
+	
+	/* border: 5px solid aquamarine; */
+}
+/* Dialog */
+#projectSection_Scene_mascotDialog > #projectSection_dialogBox {
+	background-image: url("../images/img_dialogBox.webp");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	
+	display: block;
+	
+	/* width: 100%; */
+	/* height: 100%; */
+	
+	/* display: inline-block; */
+	/* position: absolute; */
+	
+	margin-top: 5%;
+	margin-left: 1%;
+	
+	/* top: 0; */
+	/* left: 10%; */
+	
+	width: 69%;
+	height: 55%;
+	
+	/* border: 1px solid yellow; */
+}
+#projectSection_Scene_mascotDialog > #projectSection_dialogBox > .dialogBoxTxt {
+	position: absolute;
+	
+	left: 8.5%;
+	top: 25%;
+	
+	font-size: 2.36vh;
+	line-height: 1.2;
+	
+	max-width: 54%;
+	/* border: 1px solid aquamarine; */
+}

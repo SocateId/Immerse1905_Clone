@@ -1,0 +1,136 @@
+#portfolioProjects_videoSection {
+	background-image: url("../images/portfolioPage/portfolioProjects/portfolioProjects_img_background.webp");
+	/* background-image: url("../images/portfolioPage/portfolioProjects/portfolioProjects_img_background.png"); */
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background-position: 25%; */
+	/* background-position: 50% 17.10%; */
+	/* background-position: 50% 18%; */
+	/* background-position: 50% 25%; */
+	/* background-position: 50% 21.5%; */
+	/* background-position: 50% bottom; */
+	/* background-position: 50% 100%; */
+	background-position: 50% 21%;
+	
+	/* padding-top: 5%; */
+	
+	/* border: 2px solid orange; */
+}
+
+/* Video Player */
+#portfolioProjects_video {
+	background-image: url("../images/portfolioPage/portfolioProjects/portfolioProjects_vidOutline.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* background-position: center -2.5%; */
+	background-position: center 55%;
+	
+	position: relative;
+	display: block;
+	
+	overflow:auto;
+	
+	/* width: 76%; */
+	/* width: 82.5%; */
+	/* width: 100%; */
+	
+	/* width: 87%; */
+	width: 69.6%;
+	/* height: 100%; */
+	height: 100%;
+	
+	/* margin: 5%; */
+	/* margin-top: 5%; */
+	/* margin-bottom: auto; */
+	margin-left: auto;
+	margin-right: auto;
+	
+	/* padding: 0% 5%; */
+	/* padding: 0%; */
+	/* padding: 4% 0%; */
+	/* padding-top: 5.5%; */
+	
+	/* border: 2px solid green; */
+}
+#portfolioProjects_video > div {
+	position: relative;
+	display: block;
+	
+	width: 90%;
+	/* height: 100%; */
+	height: 75%;
+	
+	z-index: 100;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	margin-top: 15.5%;
+	
+	/* padding-top: 5.5%; */
+	/* padding-top: 10%; */
+	
+	/* border: 1px solid yellow; */
+}
+/* The Actual Video */
+/* Youtube Video */
+#portfolioProjects_video > div > iframe {
+	width: 100%;
+	height: 85%;
+	
+	/* src: https://www.youtube.com/embed/czTksCF6X8Y; */
+}
+/* MP4 Video */
+#portfolioProjects_video > div > video {
+	width: 100%;
+	height: auto;
+	
+	/* border: 1px solid yellow; */
+}
+/* The Left and Right Buttons */
+#portfolioProjects_videoBtns {
+	position: absolute;
+	
+	z-index: 1;
+	
+	width: 100%;
+	height: 100%;
+	
+	top: 0;
+	
+	/* text-align: center; */
+	
+	/* border: 1px solid aqua; */
+}
+#portfolioProjects_videoBtns > div {
+	position: absolute;
+	display: block;
+	
+	cursor: pointer;
+	
+	width: fit-content;
+	height: 9.5%;
+	
+	top: 44.5%;
+	/* top: 40%; */
+	
+	/* border: 1px solid orange; */
+}
+#portfolioProjects_videoBtns > div > img {
+	width: auto;
+	height: 100%;
+}
+/* Left Button */
+#portfolioProjects_videoBtns > #portfolioProjects_videoBtns_leftBtn {
+	left: 2.1%;
+}
+/* Right Button */
+#portfolioProjects_videoBtns > #portfolioProjects_videoBtns_rightBtn {
+	right: 2.1%;
+	
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+

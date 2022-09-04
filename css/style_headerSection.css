@@ -1,0 +1,222 @@
+#headerSection {
+	/* position: -webkit-sticky; */
+	/* position: sticky; */
+	/* display: none; */
+	/* visibility: hidden; */
+	/* opacity: 100; */
+	
+	/* position: fixed; */
+	
+	position: sticky;
+	
+	/* position: absolute; */
+	
+	/* overflow: hidden; */
+	
+	z-index: 1000;
+	/* background-color: black; */
+	
+	height: var(--sectionHeight_header);
+	width: var(--sectionWidth);
+	/* width: 100%; */
+	
+	margin-top: calc(-1 * var(--sectionHeight_header));
+	margin-left: auto;
+	margin-right: auto;
+	
+	padding: 2.7% 0 0 3.6%;
+	/* padding-top: auto; */
+	/* padding-bottom: auto; */
+	
+	top: 0;
+	
+	/* overflow: hidden; */
+	
+	-moz-transition: 
+		display 100ms ease,
+		opacity 500ms ease;
+	-webkit-transition: 
+		display 100ms ease,
+		opacity 500ms ease;
+	transition: 
+		display 100ms ease,
+		opacity 500ms ease;
+	
+	/* border: 5px solid green; */
+}
+
+/* Navigation Bar */
+/* #navbar { */
+	/* display: block; */
+	
+	/* opacity: 0; */
+	/* margin: 2.5% auto 0% 24%; */
+	/* margin: 2.5% auto 0% 24%; */
+	
+	/* margin-left: auto; */
+	/* margin-right: auto; */
+	
+	/* object-position: 16px 0; */
+	
+	/* height: 6.7vh; */
+	/* height: 6.7vh; */
+	/* width: auto; */
+	
+	/* border: 5px solid aquamarine; */
+/* } */
+#navbar {
+	display: block;
+	
+	height: 6.7vh;
+	width: auto;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	/* border: 5px solid aquamarine; */
+}
+
+#headerSection > svg > img {
+	border: 5px solid orange;
+}
+
+#headerSection > map > area {
+	/* border: 5px solid blue; */
+}
+
+.headerRow {
+	/* Design 1 */
+	margin: 0.25% 0%;
+	max-height: 50%;
+	
+	/* Design 2 */
+	/* height: 100%; */
+	/* margin: 0%; */
+	/* vertical-align: top; */
+	
+	/* border: 2px solid orange; */
+}
+
+.headerRow_btn {
+	/* Design 1 */
+	height: fit-content;
+	
+	/* Design 2 */
+	/* position: absolute; */
+	/* right:0; */
+	/* width: 75%; */
+}
+.headerRow_sLinks {
+	/* Design 1 */
+	height: 75%;
+	
+	/* Design 2 */
+	/* position: absolute; */
+	/* left:0; */
+	/* width: 25%; */
+}
+
+.header_btn:link,
+.header_btn:visited {
+	border-radius: 25px;
+	background-color: rgba(200, 200, 200, 0.5);
+	
+	/* z-index: 1000; */
+	
+	/* height: 100%; */
+	height: fit-content;
+	width: 12.5%;
+	
+	margin: 0% 1.5%;
+	
+	padding-top: 0.5%;
+	/* padding: auto 0%; */
+	
+	font-family: var(--titleFont);
+	
+	/* font-size: 1.5vw; */
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	color: white;
+	
+	-moz-transition: 
+		transform 300ms ease, 
+		background-color 250ms ease;
+	-webkit-transition: 
+		transform 300ms ease, 
+		background-color 250ms ease;
+	transition: 
+		transform 300ms ease, 
+		background-color 250ms ease;
+}
+.header_btn:hover,
+.header_btn:active {
+	-moz-transform: scale(1.25, 1.25);
+	-webkit-transform: scale(1.25, 1.25);
+	transform: scale(1.25, 1.25);
+	
+	/* -moz-transform: scale(125%); */
+	/* -webkit-transform: scale(125%); */
+	/* transform: scale(125%); */
+	
+	background-color: rgba(250, 250, 250, 0.5);
+}
+
+/* Header Button Text */
+.header_btn > h1 {
+	font-weight: bold;
+	font-size: 1.5vw;
+	/* font-size: fit-content; */
+}
+
+/* Social Media Style START */
+.header_btn_sLink:link,
+.header_btn_sLink:visited {
+	border-radius: 15px;
+	border: 2px dashed rgba(250, 250, 250, 0.6);
+	/* border: 2px solid black; */
+	/* background-color: rgba(200, 200, 200, 0.5); */
+	
+	/* z-index: 1000; */
+	/* max-height: 65%; */
+	/* min-height: 55%; */
+	height: 65%;
+	/* width: 12.5%; */
+	width: auto;
+	
+	margin: 0% 1.5%;
+	
+	-moz-transition: 
+		transform 300ms ease, 
+		background-color 250ms ease;
+	-webkit-transition: 
+		transform 300ms ease, 
+		background-color 250ms ease;
+	transition: 
+		transform 300ms ease, 
+		background-color 250ms ease;
+}
+.header_btn_sLink:hover,
+.header_btn_sLink:active {
+	-moz-transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+	
+	/* -moz-transform: scale(115%); */
+	/* -webkit-transform: scale(115%); */
+	/* transform: scale(115%); */
+	
+	background-color: rgba(250, 250, 250, 0.5);
+}
+
+.header_btn_sLink > img {
+	display: block;
+	
+	height: 100%;
+	width: auto;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Social Media Style END */

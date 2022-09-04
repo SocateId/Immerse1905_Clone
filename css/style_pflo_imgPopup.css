@@ -1,0 +1,199 @@
+.sItem {
+	cursor: pointer;
+}
+
+#pflo_imagePopupScene {
+	background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+	
+	/* position: sticky; */
+	position: fixed;
+	display: none;
+	z-index: 1000;
+	
+	/* width: var(--sectionWidth); */
+	width: 100%;
+	height: var(--sectionHeight);
+	
+	top: 0;
+	left: 0;
+	right: 0;
+	
+	margin-bottom: calc(-1 * var(--sectionHeight));
+	
+	-moz-animation: modelImg_zoom 500ms;
+	-webkit-animation: modelImg_zoom 500ms;
+	animation: modelImg_zoom 500ms;
+	
+	/* border: 2px solid orange; */
+}
+/* The Close Button */
+#pflo_imagePopup_closeBtn {
+	position: absolute;
+	
+	z-index: 2;
+	
+	top: 2.5%;
+	right: 2.5%;
+	
+	width: fit-content;
+	height: 10%;
+	
+	opacity: 0.7;
+	
+	transition: opacity 100ms linear;
+}
+#pflo_imagePopup_closeBtn:hover,
+#portfolioProjects_artModelImg_closeBtn:focus {
+	opacity: 1;
+	cursor: pointer;
+}
+#pflo_imagePopup_closeBtn > img {
+	width: auto;
+	height: 100%;
+}
+/* The Vertical Slider */
+#pflo_imagePopup_slideVer {
+	position: relative;
+	
+	overflow: hidden;
+	
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	/* justify-content: space-between; */
+	align-items: center;
+	
+	width: 20%;
+	height: var(--sectionHeight);
+	
+	left: 2.5%;
+	
+	/* border: 2px solid yellow; */
+}
+/* Vertical Slider Items (Images) Shown */
+#pflo_imagePopup_slideVer > .pflo_imagePopup_slideVerItem {
+	background-color: black;
+	display: block;
+	
+	width: 85%;
+	height: 20%;
+	
+	margin: 1% auto;
+	
+	/* border: 2px solid green; */
+}
+#pflo_imagePopup_slideVer > .pflo_imagePopup_slideVerItem > img {
+	display: block;
+	
+	/* width: auto; */
+	width: 100%;
+	height: 100%;
+	/* max-width: 100%; */
+	/* min-height: auto; */
+	
+	object-fit: contain;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Main Selected Item (Image) Shown */
+#pflo_imagePopup_slideVer > .pflo_imagePopup_slideVerItemSelc {
+	box-shadow: 0 0 5px 2.5px var(--txtColor);
+	
+	/* border: 2px solid green; */
+}
+/* The Horizontal Slider */
+#pflo_imagePopup_slideHor {
+	/* position: absolute; */
+	position: relative;
+	display: flex;
+	align-items: center;
+	
+	width: 100%;
+	height: 100%;
+	
+	/* top: 0; */
+	/* right: 0; */
+	
+	/* border: 2px solid pink; */
+}
+#pflo_imagePopup_slideHorScreen {
+	background-color: black;
+	
+	width: 80%;
+	height: 80%;
+	/* max-height: 60%; */
+	
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+	margin: auto;
+	
+	/* border: 2px solid green; */
+}
+#pflo_imagePopup_slideHorScreen > .pflo_imagePopup_slideHorItem {
+	/* display: block; */
+	
+	height: 100%;
+	width: 100%;
+	
+	/* margin-left: auto; */
+	/* margin-right: auto; */
+	
+	/* top: 0; */
+	/* bottom: 0; */
+	
+	/* border: 2px solid green; */
+}
+#pflo_imagePopup_slideHorScreen > .pflo_imagePopup_slideHorItem > img {
+	/* display: block; */
+	
+	/* width: auto; */
+	width: 100%;
+	height: 100%;
+	/* max-width: 100%; */
+	/* min-height: auto; */
+	
+	object-fit: contain;
+	
+	
+	/* margin-left: auto; */
+	/* margin-right: auto; */
+	
+	/* top: 0; */
+	/* bottom: 0; */
+	
+	/* border: 2px solid orange; */
+}
+/* The Horizontal Slider, Buttons */
+#pflo_imagePopup_slideHor_btnPrev,
+#pflo_imagePopup_slideHor_btnNext {
+	width: 8%;
+	-webkit-appearance: initial !important;
+	/* width: 50%; */
+	/* height: 50%; */
+	
+	/* border: 2px solid orange; */
+}
+#pflo_imagePopup_slideHor_btnPrev > div,
+#pflo_imagePopup_slideHor_btnNext > div {
+	/* width: 50%; */
+	/* height: 50%; */
+	
+	/* border: 2px solid pink; */
+}
+#pflo_imagePopup_slideHor_btnPrev > div > img,
+#pflo_imagePopup_slideHor_btnNext > div > img {
+	width: 50%;
+	height: auto;
+	
+	/* border: 2px solid pink; */
+}
+#pflo_imagePopup_slideHor_btnNext > div > img {
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}

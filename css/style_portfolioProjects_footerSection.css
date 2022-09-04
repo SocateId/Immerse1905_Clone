@@ -1,0 +1,52 @@
+#portfolioProjects_footerSection {
+	background-image: url("../images/portfolioPage/portfolioProjects/portfolioProjects_img_background.webp");
+	/* background-image: url("../images/portfolioPage/portfolioProjects/portfolioProjects_img_background.png"); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background-position: 50% 21%; */
+	background-position: 50% bottom;
+	
+	position: relative;
+	
+	width: var(--sectionWidth);
+	height: 40vh;
+	
+	/* padding-top: 7%; */
+	
+	/* border: 2px solid green; */
+}
+
+/* Social Media Links */
+#portfolioSection_sMedia_scene {
+	width: 100%;
+	/* height: 33%; */
+	height: 100%;
+	
+	padding-top: 5%;
+	padding-left: 6%;
+	
+	
+	/* border: 2px solid red; */
+}
+#portfolioSection_sMedia_scene > a {
+	/* background: rgb(250, 250, 250, 0.4); */
+	/* border: 50px solid transparent; */
+	/* border-bottom-color: rgb(250, 250, 250, 0.4); */
+	/* position: relative; */
+	/* top: -50px; */
+	
+	width: fit-content;
+	height: 40%;
+	
+	margin: 0% 0.55%;
+	/* margin: 0% 0.1%; */
+	/* margin: 0%; */
+	
+	/* border: 2px solid orange; */
+}
+#portfolioSection_sMedia_scene > a > img {
+	width: auto;
+	height: 100%;
+	
+	/* border: 2px solid purple; */
+}

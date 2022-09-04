@@ -1,0 +1,80 @@
+:root {
+	--sectionsNum: 2;
+	--sectionsHeight: 100vh;
+	--sectionWidth: 100%;
+}
+
+/* Title Font */
+@font-face {
+	font-family: "rampung";
+	src: url(fonts/Rampung.ttf);
+}
+
+/* Body Font */
+@font-face {
+	font-family: "lato";
+	src: url(fonts/Lato-Regular.ttf);
+}
+
+/* Body Font, Bold Version */
+@font-face {
+	font-family: "lato";
+	font-weight: bold;
+	src: url(fonts/Lato-Bold.ttf);
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	/* scroll-snap-type: y mandatory; */
+	scroll-snap-type: y;
+	scroll-behavior: smooth;
+}
+
+body{
+	/* font-size: 100%; */
+}
+
+.webSection {
+	position: relative;
+	background-color: black;
+	
+	width: var(--sectionWidth);
+	/* min-width: 100vh; */
+	/* (Height/Width)*100 */
+	/* min-height: 100vh; */
+	height: var(--sectionsHeight);
+	/* aspect-ratio: 2 / 1; */
+	margin: 0px;
+	padding: 0px;
+	
+
+	scroll-snap-align: start;
+	
+	/* overflow: hidden; */
+	
+	/* border-style: solid; */
+	/* border-color: blue; */
+}
+
+.webSection_home {
+	/* scroll-snap-align: none; */
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+.webSection_creator {
+	/* scroll-snap-align: none; */
+	/* opacity: 0; */
+	
+	transition: 
+		opacity 500ms ease, 
+		background-color 500ms ease;
+}
+.webSection_creator > div {
+	/* opacity: 0; */
+}

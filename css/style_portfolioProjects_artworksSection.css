@@ -1,0 +1,457 @@
+#portfolioProjects_artworksSection {
+	background-image: url("../images/portfolioPage/portfolioProjects/portfolioProjects_img_background.webp");
+	/* background-image: url("../images/portfolioPage/portfolioProjects/portfolioProjects_img_background.png"); */
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background-position: 50% 21%; */
+	background-position: 50% 59%;
+	
+	overflow: auto;
+	
+	/* border: 2px solid yellow; */
+}
+
+/* The Artworks Header */
+#portfolioProjects_artHeader {
+	position: relative;
+	
+	width: 100%;
+	height: 10%;
+	
+	margin-top: var(--sectionHeight_header);
+	
+	text-align: center;
+	color: var(--txtColor);
+	font-family: var(--titleFont);
+	font-weight: bold;
+	
+	padding-top: 1%;
+	
+	/* border: 2px solid pink; */
+}
+#portfolioProjects_artHeader > h1 {
+	font-size: 11.3vh;
+	/* letter-spacing: 100%; */
+	
+	margin: 0;
+	
+	/* border: 2px solid red; */
+}
+#portfolioProjects_artHeaderDiv {
+	position: absolute;
+	display: block;
+	
+	width: 100%;
+	height: 40%;
+	
+	/* text-align: center; */
+	/* color: var(--txtColor); */
+	/* font-family: var(--titleFont); */
+	/* font-weight: bold; */
+	
+	bottom: 0;
+	
+	/* padding-top: 1%; */
+	
+	/* border: 2px solid pink; */
+}
+#portfolioProjects_artHeaderDiv > img {
+	width: auto;
+	height: 100%;
+	
+	/* opacity: 0.5; */
+}
+
+/* Artwork Showcase */
+#portfolioProjects_artworkShowcaseScene {
+	background: url("../images/portfolioPage/portfolioProjects/portfolioProjects_img_artworkBG.png");
+	background-repeat: no-repeat;
+	/* background-size: contain; */
+	background-size: 85% 95%;
+	/* background-position: top center; */
+	background-position: center 38%;
+	
+	position: relative;
+	
+	width: 100%;
+	/* height: 90%; */
+	height: 75%;
+	
+	padding-top: 6%;
+	
+	/* border: 2px solid orange; */
+}
+#portfolioProjects_artShowcase {
+	position: relative;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: center;
+	
+	overflow:auto;
+	
+	width: 82%;
+	height: 84%;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	margin: 0% auto;
+	/* padding-top: 5%; */
+	/* padding-right: 1%; */
+	/* padding-left: 1%; */
+	
+	/* border: 2px solid orange; */
+}
+/* Artwork Cell */
+.portfolioProjects_artCell {
+	/* width: fit-content; */
+	width: 31%;
+	/* height: 12%; */
+	height: fit-content;
+	
+	margin: 1%;
+	cursor: pointer;
+	
+	-moz-transition: opacity 100ms linear;
+	-webkit-transition: opacity 100ms linear;
+	transition: opacity 100ms linear;
+	
+	/* border: 2px solid orange; */
+}
+.portfolioProjects_artCell:hover {
+	opacity: 0.6;
+}
+.portfolioProjects_artCell > img {
+	width: 100%;
+	height: auto;
+}
+
+/* The Artwork Model Image (Popup of the Image) */
+/* The Model Image Scene */
+#portfolioProjects_artModelImgScene {
+	background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+	
+	/* position: sticky; */
+	position: fixed;
+	display: none;
+	
+	z-index: 1000;
+	
+	/* width: var(--sectionWidth); */
+	width: 100%;
+	height: var(--sectionHeight);
+	
+	top: 0;
+	left: 0;
+	right: 0;
+	
+	margin-bottom: calc(-1 * var(--sectionHeight));
+	
+	-moz-animation: modelImg_zoom 500ms;
+	-webkit-animation: modelImg_zoom 500ms;
+	animation: modelImg_zoom 500ms;
+	
+	/* border: 2px solid green; */
+}
+/* The Close Button */
+#portfolioProjects_artModelImg_closeBtn {
+	position: absolute;
+	
+	z-index: 100;
+	
+	top: 2.5%;
+	right: 2.5%;
+	
+	width: fit-content;
+	height: 10vh;
+	
+	opacity: 0.7;
+	
+	-moz-transition: opacity 100ms linear;
+	-webkit-transition: opacity 100ms linear;
+	transition: opacity 100ms linear;
+	
+	/* border: 2px solid red; */
+}
+#portfolioProjects_artModelImg_closeBtn:hover,
+#portfolioProjects_artModelImg_closeBtn:focus {
+	opacity: 1;
+	cursor: pointer;
+}
+#portfolioProjects_artModelImg_closeBtn > img {
+	width: auto;
+	height: 100%;
+	
+	/* border: 2px solid yellow; */
+}
+/* The Vertical Model Image Slider Box */
+#portfolioProjects_artModelImg_verBox {
+	position: relative;
+	
+	overflow: hidden;
+	
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* flex-wrap: nowrap; */
+	/* justify-content: center; */
+	/* justify-content: space-between; */
+	/* align-items: center; */
+	
+	width: 20%;
+	height: var(--sectionHeight);
+	
+	left: 2.5%;
+	
+	/* border: 2px solid yellow; */
+}
+/* Vertical Slider Items (Images) Shown */
+#portfolioProjects_artModelImg_verBox > .portfolioProjects_artModelImg_verBoxItem {
+	position: absolute;
+	display: block;
+	
+	background-color: black;
+	
+	width: 85%;
+	height: 20%;
+	
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+	/* margin: 1.5% auto; */
+	margin: auto;
+	
+	-moz-transition:
+		transform 100ms ease,
+		box-shadow 100ms ease,
+		opacity 100ms ease;
+	-webkit-transition:
+		transform 100ms ease,
+		box-shadow 100ms ease,
+		opacity 100ms ease;
+	transition:
+		transform 100ms ease,
+		box-shadow 100ms ease,
+		opacity 100ms ease;
+	
+	border: 1px solid var(--txtColor);
+}
+#portfolioProjects_artModelImg_verBox > .portfolioProjects_artModelImg_verBoxItem > img {
+	display: block;
+	
+	/* width: auto; */
+	width: 100%;
+	height: 100%;
+	/* max-width: 100%; */
+	/* min-height: auto; */
+	
+	object-fit: contain;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Vertical Slider Main/Selected Item */
+#portfolioProjects_artModelImg_verBox > .portfolioProjects_artModelImg_verBoxItemSelc {
+	box-shadow: 0 0 5px 2.5px var(--txtColor);
+}
+/* Vertical Slider Prev 1 Item */
+#portfolioProjects_artModelImg_verBox > .portfolioProjects_artModelImg_verBoxItem_prev1 {
+	-moz-transform: translate(0, -110%);
+	-webkit-transform: translate(0, -110%);
+	transform: translate(0, -110%);
+}
+/* Vertical Slider Prev 2 Item */
+#portfolioProjects_artModelImg_verBox > .portfolioProjects_artModelImg_verBoxItem_prev2 {
+	-moz-transform: translate(0, -220%);
+	-webkit-transform: translate(0, -220%);
+	transform: translate(0, -220%);
+}
+/* Vertical Slider Prev 3 Item */
+#portfolioProjects_artModelImg_verBox > .portfolioProjects_artModelImg_verBoxItem_prev3 {
+	-moz-transform: translate(0, -330%);
+	-webkit-transform: translate(0, -330%);
+	transform: translate(0, -330%);
+	
+	opacity: 0;
+}
+/* Vertical Slider Next 1 Item */
+#portfolioProjects_artModelImg_verBox > .portfolioProjects_artModelImg_verBoxItem_next1 {
+	-moz-transform: translate(0, 110%);
+	-webkit-transform: translate(0, 110%);
+	transform: translate(0, 110%);
+}
+/* Vertical Slider Next 2 Item */
+#portfolioProjects_artModelImg_verBox > .portfolioProjects_artModelImg_verBoxItem_next2 {
+	-moz-transform: translate(0, 220%);
+	-webkit-transform: translate(0, 220%);
+	transform: translate(0, 220%);
+}
+/* Vertical Slider Next 3 Item */
+#portfolioProjects_artModelImg_verBox > .portfolioProjects_artModelImg_verBoxItem_next3 {
+	-moz-transform: translate(0, 330%);
+	-webkit-transform: translate(0, 330%);
+	transform: translate(0, 330%);
+	
+	opacity: 0;
+}
+/* The Horizontal Model Image Slider Box */
+#portfolioProjects_artModelImgBox_horBox {
+	position: relative;
+	/* position: sticky; */
+	/* position: absolute; */
+	/* display: inline-block; */
+	/* display: inline-block; */
+	display: flex;
+	align-items: center;
+	
+	/* width: var(--sectionWidth); */
+	/* width: 80%; */
+	/* width: 75%; */
+	width: 100%;
+	/* height: var(--sectionHeight); */
+	/* height: 70%; */
+	height: 100%;
+	/* height: fit-content; */
+	
+	/* top: 0; */
+	/* bottom: 0; */
+	/* right: 0; */
+	
+	/* margin-top: auto; */
+	/* margin-bottom: auto; */
+	/* margin-left: auto; */
+	/* margin-right: auto; */
+	
+	/* padding-top: auto; */
+	/* padding-bottom: auto; */
+	
+	/* border: 2px solid orange; */
+}
+/* Horizontal Model Image Carousel Box */
+#portfolioProjects_artModelImg_carousel {
+	width: 100%;
+	height: 80%;
+	
+	/* border: 2px solid pink; */
+}
+/* The Model Image Carousel Screen */
+#portfolioProjects_artModelImg_picScreen {
+	/* position: absolute; */
+	/* display: block; */
+	
+	background-color: black;
+	
+	width: 80%;
+	/* width: 100%; */
+	/* min-width: 80%; */
+	/* max-width: 80%; */
+	height: 100%;
+	/* min-height: 70%; */
+	/* max-height: 70%; */
+	/* max-height: 60%; */
+	
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+	margin: auto;
+	/* margin-left: auto; */
+	/* margin-right: auto; */
+	
+	/* padding-left: 15%; */
+	/* padding-right: 15%; */
+	
+	/* border: 2px solid green; */
+}
+#portfolioProjects_artModelImg_picScreen > .portfolioProjects_artModelImg_horBoxItem {
+	/* display: block; */
+	
+	height: 100%;
+	width: 100%;
+	
+	/* border: 2px solid orange; */
+}
+#portfolioProjects_artModelImg_picScreen > .portfolioProjects_artModelImg_horBoxItem > img {
+	height: 100%;
+	width: 100%;
+	
+	object-fit: contain;
+	
+	/* border: 2px solid red; */
+}
+/* The Horizontal Slider, Buttons */
+#portfolioProjects_artModelImg_carousel_btnPrev, 
+#portfolioProjects_artModelImg_carousel_btnNext {
+	width: 8%;
+	-webkit-appearance: initial !important;
+	/* border: 2px solid green; */
+}
+#portfolioProjects_artModelImg_carousel_btnPrev > div, 
+#portfolioProjects_artModelImg_carousel_btnNext > div {
+	
+}
+#portfolioProjects_artModelImg_carousel_btnPrev > div > img, 
+#portfolioProjects_artModelImg_carousel_btnNext > div > img {
+	width: 50%;
+	height: auto;
+}
+#portfolioProjects_artModelImg_carousel_btnNext > div > img {
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+/* The Model Image Box */
+#portfolioProjects_artModelImgBox {
+	/* position: relative; */
+	position: sticky;
+	
+	/* width: var(--sectionWidth); */
+	width: 80%;
+	/* height: var(--sectionHeight); */
+	height: 100%;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	/* border: 2px solid orange; */
+}
+/* The Model Image */
+/* #portfolioProjects_artModelImg { */
+	/* display: flex; */
+	
+	/* justify-content: center; */
+	/* align-items: center; */
+	
+	/* width: 100%; */
+	/* height: 100%; */
+	
+	
+	/* border: 2px solid pink; */
+/* } */
+/* #portfolioProjects_artModelImg_picBox { */
+	/* display: flex; */
+	
+	/* justify-content: center; */
+	/* align-items: center; */
+	
+	/* width: 80%; */
+	/* height: 70%; */
+	
+	/* border: 2px solid purple; */
+/* } */
+/* #portfolioProjects_artModelImg_picBox > img { */
+	/* width: auto; */
+	/* width: 100%; */
+	/* height: 100%; */
+	/* max-width:  */
+	
+	/* object-fit: contain; */
+	
+	/* border: 2px solid aqua; */
+/* } */

@@ -1,0 +1,352 @@
+#introSection {
+	background-image: url("../images/introSection/introSection_img_backgroundFrame.png"), url("../images/introSection/introSection_img_background.jpg");
+	background-repeat: no-repeat;
+	background-position: center, center;
+	/* background-color: black; */
+	background-size: 100% 100%, cover;
+	
+	/* box-shadow: 0 0 15px 10px var(--backgroundColor_1) inset; */
+	/* box-shadow: 0 0 8px 8px var(--backgroundColor_1) inset; */
+	
+	/* overflow:auto; */
+	
+	/* width: 100%; */
+	/* height: 100vh; */
+	/* height: 500px; */
+	/* margin: 0px; */
+	/* padding: 0px; */
+	
+	/* border: 5px solid blue; */
+}
+
+/* Mascot and Portal Scene */
+#mascotPortalScene {
+	position: absolute;
+	
+	width: 65%;
+	/* width: 100%; */
+	height: 80%;
+	/* height: 100%; */
+	
+	/* margin-top: auto; */
+	/* margin-bottom: auto; */
+	/* margin-bottom: auto; */
+	/* margin-right: 15%; */
+	
+	/* margin-top: 25%; */
+	/* margin-bottom: auto; */
+	/* margin-bottom: auto; */
+	/* margin-right: 15%; */
+	
+	
+	/* margin-right: auto; */
+	/* margin-left: auto; */
+	
+	/* padding-top: auto; */
+	/* padding-bottom: auto; */
+	
+	top: 50%;
+	left: 65%;
+	
+	-moz-transform: translate(-65%, -50%);
+	-webkit-transform: translate(-65%, -50%);
+	transform: translate(-65%, -50%);	
+	
+	/* border: 2px solid white; */
+}
+/* Mascot */
+#introSection_mascot {
+	position: relative;
+	
+	width: fit-content;
+	height: 100%;
+	
+	/* border: 5px solid black; */
+}
+#introSection_mascot > img {
+	width: 100%;
+	height: 100%;
+	
+	object-fit: contain;
+	
+	-moz-animation: float1 5.5s ease-in-out infinite;
+	-webkit-animation: float1 5.5s ease-in-out infinite;
+	animation: float1 5.5s ease-in-out infinite;
+}
+/* Dialog Box and Portal Container */
+#introSection_dialogNportal {
+	/* position: absolute; */
+	
+	width: 65%;
+	/* width: 100%; */
+	height: 100%;	
+	
+	/* border: 2px solid red; */
+}
+/* Dialog Box */
+#introSection_dialog {
+	position: relative;
+	
+	width: 100%;
+	height: 60%;
+	
+	font-size: 2.5vh;
+	
+	/* border: 2px solid orange; */
+}
+#introSection_dialog > .dialogBox {
+	background-image: url("../images/introSection/introSection_img_dialogBox.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	/* background-color: black; */
+	background-size: 100% 100%;
+	
+	position: relative;
+	display: block;
+	
+	left: -15%;
+	
+	width: 100%;
+	height: 100%;
+	
+	/* border: 2px solid green; */
+}
+#introSection_dialog > .dialogBox > img {
+	height: 100%;
+	width: auto;
+	
+	/* height: auto; */
+	/* width: 100%; */
+	
+	/* border: 5px solid red; */
+}
+#introSection_dialog > .dialogBox > .dialogBoxTxt {
+	position: absolute;
+	
+	max-width: 60%;
+	
+	top: 16.5%;
+	left: 23%;
+	
+	/* color: var(--txtColor); */
+	/* font-family: var(--bodyFont); */
+	
+	/* height: auto; */
+	/* width: 100%; */
+}
+
+/* Island Portal */
+#introSection_island {
+	position: relative;
+	/* display: block; */
+	/* overflow: auto; */
+	
+	/* width: 100%; */
+	width: 95%;
+	height: 40%;
+	
+	/* border: 5px solid yellow; */
+}
+#introSection_island > a:link,
+#introSection_island > a:visited {
+	position: relative;
+	/* display: inline-block; */
+	display: inline-block;
+	/* margin: 0% 1.5%; */
+	
+	/* width: fit-content; */
+	/* width: 50%; */
+	height: 100%;
+	
+	-moz-transition: 
+		transform 300ms ease, 
+		background-color 250ms ease;
+	-webkit-transition: 
+		transform 300ms ease, 
+		background-color 250ms ease;
+	transition: 
+		transform 300ms ease, 
+		background-color 250ms ease;
+		
+	/* border: 5px solid purple; */
+}
+#introSection_island > a:hover,
+#introSection_island > a:active {
+	-moz-transform: scale(1.25, 1.25);
+	-webkit-transform: scale(1.25, 1.25);
+	transform: scale(1.25, 1.25);
+	
+	/* -moz-transform: scale(125%, 125%); */
+	/* -webkit-transform: scale(125%, 125%); */
+	/* transform: scale(125%, 125%); */
+}
+/* #introSection_island > a:hover > img, */
+/* #introSection_island > a:active > img { */
+	/* transform: scale(125%); */
+	
+	/* animation: float1 5.5s ease-in-out infinite;  */
+/* } */
+#introSection_island > a > img {
+	/* position: absolute;  */
+	/* display: inline-block; */
+	display: block;
+	
+	z-index: auto;
+	
+	margin: 0;
+	padding: 0;
+	
+	width: auto;
+	height: 100%;
+	
+	-moz-animation: float3 3000ms ease-in-out infinite;
+	-webkit-animation: float3 3000ms ease-in-out infinite;
+	animation: float3 3000ms ease-in-out infinite;
+	
+	/* border: 5px solid green; */
+}
+/* #introSection_island > img { */
+	/* width: auto; */
+	/* height: 100%; */
+/* } */
+/* Island Glow Effect */
+#introSection_islandGlow {
+	position: absolute;
+	
+	z-index: -1;
+	
+	/* width: 24px; */
+	/* height: 24px; */
+	
+	top: 50%;
+	left: 50%;
+	
+	/* box-shadow: 0 0px 8px 15px var(--glowColor) inset; */
+	/* box-shadow: 0 0px 10px 15px var(--glowColor); */
+	/* border-radius: 150%; */
+	overflow: hidden;
+	border-collapse: separate; 
+	/* box-shadow: 0 0px 0px 0px var(--glowColor); */
+	border-radius: 1em;
+	
+	-moz-transition: box-shadow 350ms ease-in-out;
+	-webkit-transition: box-shadow 350ms ease-in-out;
+	transition: box-shadow 350ms ease-in-out;
+	
+	/* border: 5px solid green;  */
+}
+#introSection_island > a:hover > #introSection_islandGlow ,
+#introSection_island > a:active > #introSection_islandGlow {
+	/* transform: scale(1525%); */
+	box-shadow: 0 0px 125px 8vh var(--glowColor);
+	
+	/* border: 5px solid green;  */
+}
+/* Island Sign, Text and Arrow */
+#introSection_islandSign {
+	position: absolute;
+	display: inline-block;
+	
+	width: 55%;
+	height: 100%;
+	
+	-moz-animation: float3 3000ms ease-in-out infinite;
+	-webkit-animation: float3 3000ms ease-in-out infinite;
+	animation: float3 3000ms ease-in-out infinite;
+	
+	/* border: 5px solid orange;  */
+}
+/* Island Sign, Arrow */
+#introSection_islandSign > #introSection_islandSignArrow {
+	position: absolute;
+	/* float: right; */
+	/* display: inline-block; */
+	
+	width: 45%;
+	height: 85%;
+	
+	/* color: var(--txtColor); */
+	/* font-weight: bold; */
+	/* font-size: 3vh; */
+	
+	top: 0;
+	bottom: 0;
+	/* right: 0; */
+	
+	margin-top: auto;
+	margin-bottom: auto;
+	
+	/* animation: float3 3000ms ease-in-out infinite; */
+	
+	/* border: 5px solid red;  */
+}
+#introSection_islandSign > #introSection_islandSignArrow > img {
+	position: absolute;
+	/* float: right; */
+	/* display: inline-block; */
+	
+	width: 100%;
+	height: auto;
+	
+	/* color: var(--txtColor); */
+	/* font-weight: bold; */
+	/* font-size: 3vh; */
+	
+	top: 0;
+	bottom: 0;
+	/* right: 0; */
+	
+	margin-top: auto;
+	margin-bottom: auto;
+	
+	/* animation: float3 3000ms ease-in-out infinite; */
+	
+	/* border: 5px solid orange;  */
+}
+#introSection_islandSign > p {
+	position: absolute;
+	/* float: right; */
+	display: inline-block;
+	
+	width: 55%;
+	height: fit-content;
+	
+	color: var(--txtColor);
+	font-weight: bold;
+	font-size: 3vh;
+	
+	top: 0;
+	bottom: 0;
+	right: 0;
+	
+	margin-top: auto;
+	margin-bottom: auto;
+	
+	/* animation: float3 3000ms ease-in-out infinite; */
+	
+	/* border: 5px solid pink;  */
+}
+
+/* Logo Title */
+#logoTitleScene {
+	position: absolute;
+	bottom: 2.5%;
+	left: 1%;
+	
+	/* margin: 0; */
+	/* padding: 0; */
+	
+	/* width: var(--sectionWidth); */
+	width: fit-content;
+	/* width: 50%; */
+	/* height: fit-content; */
+	height: 7.5%;
+	
+	text-align: left;
+	
+	/* border: 5px solid white; */
+}
+#logoTitleScene > img {
+	width: auto;
+	height: 100%;
+}
